@@ -1,0 +1,342 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:hover,a:focus,a:active{outline: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.icon-rentubiao:before { content: "\e6bc"; }
+
+
+
+.gwc{
+	margin: 42px 250px 0 0;
+}
+
+/* 主要内容 */
+
+/* 左半部分 */
+
+/* 个人中心 */
+
+.main{
+    padding: 28px 0 140px 0;
+    overflow: hidden;
+}
+.main-l,.main-r{
+    float: left;
+}
+.ucenter{
+    width:215px;
+    background: #F5F5F5;
+}
+.ucenter h2{
+    height:49px;
+    width:100%;
+    background: url(../images/ucenter.png) no-repeat  15px 17px #F84C84;
+    font-size: 18px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+}
+.ucenter h2 span{
+    font-size: 12px;
+}
+.ucenter ul{
+    background: #f5f5f5;
+}
+.ucenter ul h3{
+	font-size: 16px;
+	color: #4E4E4E;
+	padding: 0 0 0 34px;
+	width:159;
+	height:49px;
+	line-height: 49px;
+	background: url(../images/arrow1.png) no-repeat 11px 16px #E7E7E7;
+	cursor: pointer;
+}
+.ucenter ul li{
+    padding: 0 0 0 34px;
+    height:40px;
+    border-bottom: 1px solid #BDBDBD;
+    line-height: 40px;
+}
+.ucenter ul li>a{
+    color: #787878;
+}
+.sculpture{
+	padding: 28px 30px 32px;
+}
+
+
+/* 右半部份 */
+.main-r{
+    width:744px;
+    margin: 0 0 0 18px;
+}
+/*订单中心 */
+.order h2{
+    height: 49px;
+    color:#fff;
+    font-size: 18px;
+    padding: 0 0 0 10px;
+    line-height: 47px;
+    background: #F84C84;
+
+}
+.order h2 span{
+    font-size: 12px;
+}
+
+.orders{
+	padding: 11px 9px 30px;
+	border: 1px solid #BABABA;
+	border-top:0 ;
+}
+
+.orders-t{
+	overflow: hidden;
+}
+.orders-t li{
+	width: 99px;
+	height: 27px;
+	border: 1px solid #A1A1A1;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 0;
+	float: left;
+	margin-right: 4px;
+	text-align: center;
+	line-height: 27px;
+	background-color: #e2e2e2;
+	cursor: pointer;
+}
+.orders-t a{
+		color: #323232;
+
+}
+
+.orders-t li.active{
+	background-color: white;
+}
+
+/*商品详情*/
+.details{
+	background-color: #E7E7E7;
+	height: 31px;
+	line-height: 31px;
+	padding-left: 8px;
+	margin: 13px 0 10px;
+
+}
+.details li{
+	height: 31px;
+	float: left;
+	color: #777171;
+}
+.details ul li:nth-child(1){
+	width: 293px;
+}
+.details ul li:nth-child(2){
+	width: 93px;
+}
+.details ul li:nth-child(3){
+	width: 62px;
+}
+.details ul li:nth-child(4){
+	width: 103px;
+}
+.details ul li:nth-child(5){
+	width: 107px;
+}
+.fl{float: left;}
+.fr{float: right;}
+.fl,.fr{
+	color: #787171;
+}
+.ordernub{
+	border: 1px solid #E2E2E2;
+	margin: 0 0 10px 0;
+	
+}
+.ordernub-t{
+	height: 31px;
+	background-color: #F5F5F5;
+	padding:0 8px;
+	line-height: 31px;
+}
+
+
+/*订单编号*/
+.ordernub-b{
+	overflow: hidden;
+}
+.ordernub-b li{
+	border-right:1px solid #E2E2E2;
+	float: left;
+}
+.ordernub-b li:first-child{
+	width: 274px;
+	padding: 12px 0 14px 11px;
+}
+.ordernub-b li:first-child img{
+	float: left;
+}
+
+.p-1,.p-2{
+	padding-left: 90px;
+	color: #515151;
+}
+.p-1{
+	font-size: 16px;
+	color: #252525;
+	padding-top: 20px;
+	height: 30px;
+}
+
+.ordernub-b li:nth-child(2){
+	width: 137px;
+	height:64px;
+	padding: 44px 0 0 13px ;
+	font-size: 16px;
+	color: #424242;
+}
+
+
+.ordernub-b li:nth-child(2) span:nth-child(1){
+	display: inline-block;
+	width: 95px;
+	color: #424242;
+}
+.ordernub-b li:nth-child(3){
+	font-size: 14px;
+	width: 90px;
+	height: 65px;
+	padding-top: 43px ;
+	text-align: center;
+	color: #aeaeae;
+}
+.ordernub-b li:nth-child(3) .price{
+	font-weight: 400;
+	color: #424242;
+	font-size: 16px;
+}
+
+.ordernub-b li:nth-child(4){
+	width: 110px;
+	height:65px;
+	text-align: center;
+	padding-top: 43px;
+	font-size: 14px;
+	color: #F54E84;
+}
+
+.ordernub-b li:nth-child(5){
+	height: 68px;
+	width: 80px;
+	border-right:0 none ;
+	text-align: center;
+	padding: 38px 0 0 0;
+}
+.ordernub-b li:nth-child(5) a{
+	width: 71px;
+	height: 24px;
+	background-color: #FA4D85;
+	display: inline-block;
+	line-height: 24px;
+	text-align: center;
+	color: white;
+	border-radius:5px ;
+	margin: 0 auto 3px;
+}
+/* 商品信息 */
+
+.ware{
+    height:426px;
+    width:790px;
+    border: 1px solid #BABABA;
+    border-top:none;
+    margin: 0 0 52px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

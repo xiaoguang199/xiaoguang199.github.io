@@ -1,0 +1,178 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>商品规格</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/fabu3.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/fabu3.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="fabu1.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>商品规格</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<section>
+			<div class="color">
+				<div class="biaoti">颜色分类</div>
+				<ul class="yanse">
+					<li>
+						<a></a>
+						<p>白色</p> 
+					</li>
+					<li>
+						<a></a>
+						<p>乳白色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>米白色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>浅灰色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>深灰色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>灰色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>银色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>黑色</p>
+					</li>
+					<li>
+						<a></a>
+						<p>橘红色</p>
+					</li>
+				</ul>
+				<div class="zhank">
+					<img src="../img/zhankai.png" />
+				</div>
+			</div>
+			<div class="size color">
+				<div class="biaoti">尺码</div>
+				<ul class="chim yanse">
+					<li>
+						48
+					</li>
+					<li>
+						47.5
+					</li>
+					<li>
+						47
+					</li>
+					<li>
+						46.5
+					</li>
+					<li>
+						46
+					</li>
+					<li>
+						45.5
+					</li>
+					<li>
+						45
+					</li>
+					<li>
+						44.5
+					</li>
+					<li>
+						44
+					</li>
+				</ul>
+				<div class="zhank">
+					<img src="../img/zhankai.png" />
+				</div>
+			</div>
+			<div class="kucun">
+				<div class="biaoti1">价格/库存</div>
+				<ul class="liebiao">
+					<li>
+						<p>"白色"+"48"</p>
+						<div>
+							<input type="text" placeholder="输入价格"/>
+							<input type="text" placeholder="输入库存"/>
+						</div>
+					</li>
+					<li>
+						<p>"白色"+"48"</p>
+						<div>
+							<input type="text" placeholder="输入价格"/>
+							<input type="text" placeholder="输入库存"/>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

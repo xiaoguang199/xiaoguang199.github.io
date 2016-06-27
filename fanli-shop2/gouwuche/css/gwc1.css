@@ -1,0 +1,323 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+}
+header span{
+	display: inline-block;
+	margin: 0 auto;
+	font-size: 1.5rem;
+	color: white;
+	margin-left: 4rem;
+}
+header a{
+	padding-top: 0.7rem;
+	display: inline-block;
+	line-height: 1.65rem;
+	height: 1.65rem;
+	float: right;
+	/*margin-right: 1.0rem;*/
+}
+header a img{
+	display:inline-block;
+	float: right ;
+	height: 1.65rem;
+}
+
+.right1{
+	display: block;
+	width: 2.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	padding-right: 1.0rem;
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+/*内容*/
+section{
+	width: 100%;
+}
+.pinp{
+	width: 100%;
+	background: white;
+	margin-top: 0.75rem;
+}
+.head{
+	width: 96%;
+	height: 2.29rem;
+	line-height: 2.29rem;
+	margin: 0 auto;
+	border-bottom: 0.15rem solid #f9f9f9;
+	overflow: hidden;
+}
+.head p{
+	display: inline-block;
+}
+.lft{
+	float: left;
+	font-size: 1.17rem;
+}
+.lft span{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	margin-right: 0.63rem;
+	border: 0.1rem solid #636363;
+	border-radius: 50%;
+}
+.mian{
+	 width: 96%;
+	 height: 8.75rem;
+	 margin: 0 auto;
+	 overflow: hidden;
+	 margin-bottom: 0.75rem;
+}
+.yp img{
+	width: 7.08rem;
+	/*height: 7.20rem;*/
+	margin-top: 0.52rem;
+	margin-right: 0.83rem;
+	vertical-align: top;
+	float: left;
+}
+.mian p{
+	width: 62%;
+	line-height: 1.7rem;
+	font-size: 1.0rem;
+	margin-top: 0.53rem;
+	float: left;
+}
+.mian a{
+	width: 65%;
+	float: left;
+	font-size: 0.83em;
+	margin-top: 0.53rem;
+}
+
+.mian_shu{
+	float: left;
+	overflow: hidden;
+	margin-top: 0.53rem;
+}
+.mian_shu div{
+	display: inline-block;
+	
+}
+.mian_shu div span{
+	font-size: 1.0rem;
+}
+.mian_shu div:nth-child(2) i{
+	display: inline-block;
+	width: 0.92rem;
+	height: 0.92rem;
+	background: #d5cfa1;
+	margin-left: 1.0rem;
+	margin-right: 1.0rem;
+}
+.geshu{
+	overflow: hidden;
+}
+.geshu span{
+	float:left;
+	display:block;
+	text-align: center;
+	width: 0.92rem;
+	height: 0.92rem;
+	font-size: 1.3rem;
+	line-height: 0.8rem;
+	border: 0.1rem solid #333;
+	border-radius: 50%;
+}
+.geshu b{
+	font-weight:normal ;
+	float:left;
+	display: block;
+	text-align: center;
+	width: 0.92rem;
+	height: 0.92rem;
+	font-size: 1.3rem;
+	line-height: 0.8rem;
+	border: 0.1rem solid #333;
+	border-radius: 50%;
+}
+.geshu input{
+	width: 3.13rem;
+	float:left;
+	height: 1.0rem;
+	background: #f8f8f8;
+	outline: none;
+	text-align: center;
+	vertical-align: middle;
+
+}
+.xian{
+	width: 96%;
+	height: 0.07rem;
+	background: #e1e1e1;
+	margin: 0 auto;
+}
+.shoudan{
+	width: 100%;
+	height: 3.54rem;
+	line-height: 3.54rem;
+	overflow: hidden;
+}
+.shoudan a{
+	font-size: 0.83rem;
+	margin-left: 2%;
+	float: left;
+}
+.shoudan span{
+	float: right;
+	margin-right: 10%;
+	font-size: 2.0rem;
+	color: #2f2f2f;
+}
+.qxuan{
+	width: 100%;
+	height: 3.54rem;
+	overflow: hidden;
+	background: #efefef;
+	position: fixed;
+	bottom: 4.18rem;
+}
+.qxuan1{
+	height: 3.54rem;
+	line-height: 3.54rem;
+	float: left;
+	margin-left: 2%;
+	font-size: 0.92rem;
+}
+.qxuan1 span{
+	display: inline-block;
+	width: 0.6rem;
+	height: 0.6rem;
+	border: 0.1rem solid #636363;
+	border-radius: 50%;
+}
+.qxuan2{
+	width: 6.88rem;
+	float: right;
+	height: 3.54rem;
+	line-height: 1.7rem;
+	margin-right: 1.25rem;
+	overflow: hidden;
+}
+.qxuan2 p:nth-child(1){
+	float: right;
+}
+.qxuan2 p:nth-child(1) span{
+	font-size: 0.83rem;
+}
+.qxuan2 p:nth-child(1) a{
+	font-size: 0.83rem;
+	color: red;
+}
+.qxuan2 p:nth-child(2){
+	float: right;
+}
+.qxuan2 p:nth-child(2) span{
+	font-size: 1.1rem;
+}
+.qxuan2 p:nth-child(2) a{
+	font-size: 1.1rem;
+	color: red;
+}
+.qxuan3{
+	float: right;
+	height: 3.54rem;
+	line-height: 3.54rem;
+}
+.qxuan3 a{
+	display: block;
+	/*height: 2.0rem;*/
+	width: 5.63rem;
+	margin-right: 1.25rem;
+}
+.qxuan3 button{
+	width: 5.63rem;
+	height: 2.0rem;
+	background: #fe6f51;
+	color: white;
+	outline: none;
+	font-size: 1.1rem;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 4.18rem;
+	background: #f5f5f5;
+}
+.fenlei{
+	background: #fe6e50;
+	
+}
+.fenlei span{
+	color: white;
+}
+footer li{
+	float: left;
+	width: 25%;
+	height: 4.08rem;
+	text-align: center;
+} 
+footer li a{
+	display: block;
+	width: 100%;
+	height: 4.08rem;
+}
+footer li img{
+	width: 1.88rem;
+	height: 1.88rem;
+	margin-top: 0.67rem;
+}
+footer li span{
+	display: block;
+	font-size: 0.92rem;
+	color: #bbbcc1;
+}
+

@@ -1,0 +1,79 @@
+*{margin: 0;padding: 0;font-family: "宋体"}
+html{font-size: 100px;}
+html,body{
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.container .top{
+	width: 2.46rem;
+	height: 0.68rem;
+	background: url(../img/41.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+    top: 2.8rem;
+	left: 50%;
+	margin-left: -1.23rem;
+}
+.container .line,.container .line_1{
+	width: 5.07rem;
+	height: 0.02rem;
+	background: url(../img/line.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 3.8rem;
+	left: 50%;
+	margin-left: -2.535rem;
+}
+.container .middle{
+	width: 5.12rem;
+	height: 1.4rem;
+	background: url(../img/42.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 3.9rem;
+	left: 50%;
+	margin-left: -2.56rem;
+	padding: 0.2rem;
+}
+.container .middle_btm{
+	width: 3.53rem;
+	height: 0.31rem;
+	background: url(../img/43.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 6.0rem;
+	left: 50%;
+	margin-left:-1.765rem; 
+}
+.container .line_1{
+	position: absolute;
+	top: 5.8rem;
+}
+.container .footer{
+	width: 5.03rem;
+    height: 0.68rem;
+    position: absolute;
+    top: 6.78rem;
+    left: 50%;
+    margin-left: -2.515rem;
+    background: url(../img/bk.png) no-repeat;
+    background-size: 100% 100%;
+}
+.container .footer a{
+	text-decoration: none;
+	color: #fff;
+	float: left;
+}
+.container .footer a i{
+    font-size: 0.37rem;
+    float: left;
+    margin: 0.1rem 0.7rem;
+    font-weight: bolder;
+}

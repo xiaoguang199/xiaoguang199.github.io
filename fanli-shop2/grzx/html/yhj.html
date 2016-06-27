@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>优惠券</title>
+		<link rel="stylesheet" type="text/css" href="../css/yhj.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/kongzhisuofang.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="grzx-app.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>我的优惠券</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main main2">
+			<ul>
+				<li>
+					<img src="../img/ico12.png" alt="" />
+				</li>
+				<li>
+					<p>嘿哈宝贝20元优惠券</p>
+					<p>截止到2016.1.14</p>
+				</li>
+				<li>
+					<span>有效</span>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<ul>
+				<li>
+					<img src="../img/ico12.png" alt="" />
+				</li>
+				<li>
+					<p>嘿哈宝贝20元优惠券</p>
+					<p>截止到2016.1.14</p>
+				</li>
+				<li>
+					<span>过期</span>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

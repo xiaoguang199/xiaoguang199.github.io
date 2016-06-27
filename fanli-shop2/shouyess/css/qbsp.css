@@ -1,0 +1,184 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+
+
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+header .sou{
+	width: 15.67rem;
+	height: 2.17rem;
+	float: right;
+	margin-right: 3.58rem;
+	background: white;
+	margin-top: 0.61rem;
+	vertical-align: middle;
+	line-height: 2.17rem;
+	overflow: hidden;
+	border-radius: 0.4rem;
+}
+.sou img{
+	width: 1.17rem;
+	height: 1.17rem;
+	float: left;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+	vertical-align: middle;
+}
+
+.sou input{
+	width: 70%;
+	height: 2.0rem;
+	float: left;
+	margin-left: 0.42rem;
+	outline: none;
+	font-size: 0.83rem;
+}
+
+section{
+	width: 100%;
+}
+.all-sp{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	background: white;
+	margin-bottom: 1.0rem;
+	margin-top: 3.58rem;
+}
+.all-sp a{
+	display: block;
+	width: 100%;
+	height: 3.33rem;
+	overflow: hidden;
+}
+.all-sp a span{
+	margin-left: 5%;
+	font-size: 1.0rem;
+	float: left;
+}
+.all-sp a img{
+	float: right;
+	width: 0.58rem;
+	margin-right: 5%;
+	margin-top: 1.1rem;
+}
+.fl{
+	width: 100%;
+	background: white;
+}
+.fl-1{
+	width: 95%;
+	margin-left: 5%;
+}
+.fl-1 li{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	border-bottom: 0.1rem solid #d5d5d5; 
+}
+.fl-1 li a{
+	display: block;
+	width: 100%;
+	height: 3.33rem;
+	overflow: hidden;
+}
+.fl-1 li span{
+	float: left;
+	font-size: 1.0rem;
+}
+.fl-1 li img{
+	float: right;
+	width: 0.58rem;
+	margin-right: 5%;
+	margin-top: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

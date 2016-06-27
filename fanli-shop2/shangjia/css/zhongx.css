@@ -1,0 +1,156 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+.logo{
+	width: 100%;
+	margin-top: 3.33rem;
+	overflow: hidden;
+}
+.logo-1{
+	width: 100%;
+	height: 13.54rem;
+	background: url(../img/bg.png) no-repeat left bottom;
+	background-size: 130% 106%;
+	font-size: 1.42rem;
+	color: white;
+	text-align: center;
+}
+.logo-1 img{
+	width: 6.25rem;
+	height: 6.25rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+.guanl{
+	width: 100%;
+}
+.guanl ul{
+	width: 96%;
+	margin: 0 auto;
+	margin-top: 1.08rem;
+	padding: 0.5rem;
+	overflow: hidden;
+	background: white;
+}
+.guanl ul li{
+	width: 33%;
+	height: 12.5rem;
+	text-align: center;
+	border-bottom: 0.1rem solid #f3f3f3;
+	float: left;
+}
+.guanl ul li:nth-child(2){
+	border-right: 0.1rem solid #f3f3f3;
+	border-left: 0.1rem solid #f3f3f3;
+}
+.guanl ul li:nth-child(5){
+	border-right: 0.1rem solid #f3f3f3;
+	border-left: 0.1rem solid #f3f3f3;
+	border-bottom: 0;
+}
+.guanl ul li:nth-child(3n){
+	border-right: 0;
+}
+.guanl ul li:nth-child(4){
+	border-bottom: 0;
+}
+.guanl ul li:nth-child(6){
+	border-bottom: 0;
+}
+.guanl li a{
+	display: block;
+	width: 100%;
+	height: 12.5rem;
+}
+.guanl li img{
+	width: 5.21rem;
+	height: 5.21rem;
+	margin-top: 2.0rem;
+	margin-bottom: 0.83rem;
+}
+.guanl li p{
+	display: block;
+	width: 100%;
+	font-size: 1.42rem;
+	color: #555;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,375 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.icon-rentubiao:before { content: "\e6bc"; }
+
+
+
+
+.gwc{
+	margin: 42px 250px 0 0;
+}
+
+
+/*面包屑*/
+.crumbs{
+	height:50px;
+	line-height: 50px;
+	border-bottom: 1px solid #D2D2D2;
+}
+.crumbs a span{
+	color: #b7b7b7;
+}
+.crumbs span{
+	color: #6a6a6a;
+	margin: 0 0 0 5px;
+}
+
+
+/* 主要内容 */
+
+
+/* 左半部分 */
+
+/* 个人中心 */
+
+.main{
+    padding: 29px 0 0 0;
+    overflow: hidden;
+    margin-bottom: 42px;
+}
+.main-l,.main-r{
+    float: left;
+}
+.ucenter{
+    height:290px;
+    width:217px;
+}
+.ucenter h2{
+    height:49px;
+    width:217px;
+    background: #F84C84;
+    font-size: 18px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+}
+.ucenter h2 span{
+    font-size: 12px;
+}
+.ucenter ul{
+    background: #f5f5f5;
+}
+.ucenter ul li{
+    padding: 0 0 0 42px;
+    height:40px;
+    border-bottom: 1px solid #BDBDBD;
+    line-height: 40px;
+}
+.ucenter ul li>a{
+    color: #9b9b9b;
+    font-size: 16px;
+}
+
+
+
+/* 右半部份 */
+.main-r{
+    width:744px;
+    margin: 0 0 0 18px;
+}
+/* 品牌加盟 */
+.order{
+    height:49px;
+    background: #F84C84;
+}
+.order h2{
+    height: 49px;
+    color:#fff;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    line-height: 47px;
+}
+.order h2 span{
+    font-size: 12px;
+}
+
+/* 填写信息 */
+
+/* 填写信息 */
+
+.fillin{
+    width:722px;
+    border: 1px solid #BABABA;
+    border-top:none;
+    overflow: hidden;
+    padding: 0 20px 20px 0;
+}
+.fillin p{
+	margin: 20px 0 0 28px;
+	color: #7b7b7b;
+}
+.fillin ul{
+    padding:18px 0 0 0;
+}
+.fillin ul li{
+	height: 32px;
+	margin: 0 0 20px 0;
+}
+.fillin ul li select{
+	color:#999;
+	margin: 0 0 0 9px;
+}
+.fillin ul li span:first-child{
+    width:150px;
+    display: inline-block;
+    text-align: right;
+    margin: 0 ;
+    line-height: 34px;
+    font-size: 16px;
+    color:#353535;
+    background: url(../images/star2.png) no-repeat 75px 13px;
+}
+.fillin ul li:nth-child(2) span:first-child{
+	background-position: 75px 13px;
+}
+.fillin ul li:nth-child(3) span:first-child{
+	background-position: 25px 13px;
+}
+.fillin ul li:nth-child(13) span:first-child{
+	background-position: 90px 13px;
+}
+.fillin ul li input:nth-child(2){
+    border: 1px solid #C5C5C5;
+    width:168px;
+    height:32px;
+    border-radius: 2px;
+    margin: 0 0 0 10px;
+}
+.fillin ul li span.ae{
+	color: #aeaeae;
+	font-size: 14px;
+}
+.fillin ul li p.ae{
+	margin: 10px 0 15px 165px;
+	color: #aeaeae;
+	font-size: 14px;
+}
+.fillin ul li input.w70{
+	width:268px;
+}
+.fillin ul li input.padd5{
+	padding:0 0 0 5px;
+	color:#999;
+}
+.fillin ul li input.h16{
+	height: 16px;
+	width: 20px;
+	vertical-align: middle;
+}
+.fillin ul li select{
+    width:132px;
+    height:32px;
+    border: 1px solid #C5C5C5;
+    border-radius: 2px;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background: url(../images/arrow.jpg) no-repeat scroll right center transparent;
+   }
+.fillin ul li:nth-child(7){
+	height: 50px;
+}
+.fillin ul li:nth-child(10) span{
+	background-position: 75px 13px;
+}
+.fillin ul li .fotohe{
+	width:88px;
+	height:92px;
+	border:1px solid #DDDDDD;
+	float: left;
+	margin: 0 0 0 14px;
+}  
+
+
+
+
+.fillin ul li .examples{
+	overflow: hidden;
+	
+} 
+.fillin ul li .examples div:first-child{
+	float: left;
+	margin: 0 0 0 20px;
+	color: #424242;
+	font-size: 12px;
+	padding: 5px 0 0 0;
+}
+.fillin ul li .examples div:last-child img{
+	border: 1px solid #DDDDDD;
+	float: left;
+	margin: 0 0 0 7px;
+}
+
+
+.fillin ul li span.identity{
+	background: url(../images/star2.png) no-repeat 28px 13px;
+}
+.fillin ul li span.identity2{
+	background: url(../images/star2.png) no-repeat 60px 13px;
+}
+.fillin ul li span.identity3{
+	background: url(../images/star2.png) no-repeat 75px 13px;
+}
+.fillin ul li .fotohe div{
+	text-align: center;
+	line-height: normal;
+	color: #CECECE;
+	font-size: 14px;
+}
+.fillin ul li .fotohe div img{
+	margin: 20px 0 0 0;
+}
+.fillin ul li .zd{
+	font-size: 12px;
+	margin: 20px 0 0 0;
+	color: #b1b1b1;
+}
+
+.fillin ul li button{
+	height: 32px;
+	width: 123px;
+	border: 1px solid #F84C84;
+	background: #F84C84;
+	color: #fff;
+	border-radius: 2px;
+	margin: 0 0 0 163px;
+	float: left;
+}
+.fillin ul li input.w247{
+	width:247px;
+}
+.fillin button{
+	margin: 65px 0 0 0;
+	float: right;
+	height: 33px;
+	width: 118px;
+	border: 1px solid #F84C84;
+	border-radius: 2px;
+	color: #fff;
+	background: #F84C84;
+}
+
+
+.fillin textarea{
+	width:698px;
+	height:168px;
+	border: 1px solid #F84C84;
+	margin: 0 0 0 20px;
+	resize: none;
+	border-radius: 2px;
+	position:relative;
+}
+.fillin .baby{
+	width:168px;
+	height:32px;
+	border: 1px solid #F84C84;
+	border-radius: 2px;
+	background: #F84C84;
+	position: absolute;
+	top: -1px;
+	left: -1px;	
+}
+.fillin button{
+	width:120px;
+	height:35px;
+	background: #F84C84;
+	color: #fff;
+	margin: 65px 0 8px 0;
+	float: right;
+}
+
+.xx{
+	border: 1px dashed #D2D2D2;
+	margin: 0 0 20px 165px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

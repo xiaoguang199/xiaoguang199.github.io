@@ -1,0 +1,116 @@
+.header-nav a{
+	padding: 0 30px;
+}
+.bodyer{
+	margin: auto;
+	padding-bottom: 180px;
+	width: 612px;
+	height: auto;
+}
+.body-title1,
+.body-title2{
+	margin: 34px 0 22px;
+	width: 320px;
+	height: 32px;
+	line-height: 32px;
+	font-size: 28px;
+	text-indent: 16px;
+	border-left: 3px solid #ff7000;
+}
+.body-title2{
+	margin-top: 50px;
+}
+.topPhoto-box{
+	overflow: hidden;
+}
+.topPhoto{
+	float: left;
+	overflow: hidden;
+	width: 190px;
+	height: 190px;
+	position: relative;
+}
+.topPhotoMid{
+	margin: 0 20px;
+}
+.topPhoto .jieShao{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	font-size: 20px;
+	text-indent: 10px;
+	background: rgba(0,0,0,.6);
+}
+.jieShao .white{
+	color: white;
+}
+.jieShao .yellow{
+	color: yellow;
+}
+.table{
+	margin: 40px 0 0;
+	text-align: center;
+}
+.table .title{
+	font-size: 26px;
+}
+.table table{
+	margin: 26px auto;
+	border-collapse: collapse;
+	width: 610px;
+}
+.table table tr{
+	width: 600px;
+	height: 46px;
+	/*overflow: scroll;*/
+}
+.table table .tr-1{
+	background: #EEEEEE;
+}
+.table table .tr-1 td{
+	font-size: 20px;
+}
+.table table td{
+	border: 1px solid #dedede;
+	font-size: 18px;
+	/*overflow: scroll*/
+}
+.table table tr td span{
+	float: left;
+	width: 100%;
+	height: 46px;
+	line-height: 46px;
+	overflow: hidden;
+	/*overflow: scroll;*/
+}
+
+.footPhoto{
+	padding: 18px 0;
+	border-top: 1px solid #e5e5e5;
+	overflow: hidden;
+}
+.footPhoto li{
+	float: left;
+}
+.footPhoto .jieShao{
+	margin-left: 15px;
+	width: 424px;
+}
+.jieShao .title a{
+	font-size: 22px;
+	color: black;
+}
+.jieShao .text{
+	font-size: 18px;
+	color: #9a9a9a;
+}
+.jieShao .time{
+	font-size: 16px;
+	color: #CCCCCC;
+}
+
+
+
+
+

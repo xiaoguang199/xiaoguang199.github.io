@@ -1,0 +1,131 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>店铺类目</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/leimu1.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/leimu1.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="zhongx.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>店铺类目</span>
+
+			<a href="###" class="right">
+				
+				<img src="../img/head-2.png" />
+			</a>
+			<i class="right2">编辑</i>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<section>
+			<ul class="lei">
+				<li>
+					<span>上衣</span>
+					<img src="../img/shanchu.png" />
+				</li>
+				<li>
+					<span>男鞋</span>
+					<img src="../img/fx.png" />
+				</li>
+				<li>
+					<span>男装</span>
+					<img src="../img/fx.png" />
+				</li>
+				<li>
+					<span>女装</span>
+					<img src="../img/fx.png" />
+				</li>
+				<li>
+					<span>女鞋</span>
+					<img src="../img/fx.png" />
+				</li>
+				<li>
+					<span>秋装</span>
+					<img src="../img/fx.png" />
+				</li>
+				<li>
+					<span>男鞋</span>
+					<img src="../img/fx.png" />
+				</li>
+			</ul>
+			<div class="tj">
+				<a href="leimu2.html">
+					<img src="../img/tianjia.png" />
+				</a>
+			</div>
+		</section>
+		<div class="shanchu" style="display: none;">
+			<div>
+				<p>确认删除“<span>男装</span>”吗?</p>
+				<input />
+				<button>确认</button>
+			</div>
+		</div>
+		<div class="tianjia" style="display: none;">
+			<div>
+				<p>请输入分类名称</p>
+				<a><input type="text" /></a>
+				<button>确认</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>提现验证-验证码</title>
+		<link rel="stylesheet" type="text/css" href="../css/txyz-yzm.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/kongzhisuofang.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>申请提现</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="main">
+			<p>请输入您收到的验证码</p>
+			<p>
+				<span>验证码</span>
+				<input type="text" name="" id="" value="" placeholder="请输入验证码"/>
+			</p>
+		</div>
+		<div class="deposit">
+			<button>下一步</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

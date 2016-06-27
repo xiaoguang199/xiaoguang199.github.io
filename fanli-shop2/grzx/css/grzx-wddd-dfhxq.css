@@ -1,0 +1,326 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+/* 去除iPhone中默认的input样式  清除苹果浏览器的圆角表单*/
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,span{margin:0; padding:0; border:none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#555; background-color:#f9f9f9;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-family: Microsoft YaHei;}
+img{border: none;}
+.scope{min-width:320px; max-width:540px;}
+/* 当浏览器的可视区域小于980px */
+@media screen and (max-width:980px) {
+	#wrap {width: 90%; margin:0 auto;}
+	#content {width: 60%;padding:5%;}
+	#sidebar {width: 30%;}
+	#footer {padding: 8% 5%;margin-bottom: 10px;}
+}
+/* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+	#header {height: auto;}
+	#searchform {position: absolute;top: 5px;right: 0;}
+	#content {width: auto; float: none; margin: 20px 0;}
+	#sidebar {width: 100%; float: none; margin: 0;}
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: none;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* 设置图片视频等自适应调整 */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.video embed, .video object, .video iframe {
+	width: 100%;
+	height: auto;
+}
+html{font-size: 62.5%;}
+
+
+
+
+/*头部*/
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+
+
+/*内容*/
+
+/*订单号*/
+
+.order_number{
+	padding: 1rem 1.4rem;
+	font-size: 1.2rem;
+	color: #242424;
+	background: #fff;
+	margin-top: 3.33rem;
+}
+.order_number p:nth-child(2){
+	background: url(../img/arrow.png) no-repeat right center;
+	padding: 0.7rem 0;
+}
+
+
+/*地址*/
+.address{
+	margin: 1rem 0;
+	background: url(../img/address_bg.jpg) no-repeat 100% 100%;
+	padding: 2rem 1.4rem;
+	background-size: cover;
+	color: #636363;
+	font-size: 1.2rem;
+}
+.address p{
+	margin: 0 0 1rem 0;
+}
+.address p span:first-child{
+	background: url(../img/ico5.png) no-repeat left center ;
+	background-size: 20%;
+	padding-left: 2rem;
+}
+.address p span:last-child{
+	background: url(../img/ico6.png) no-repeat left center ;
+	background-size: 10%;
+	padding-left: 1rem;
+	margin-left: 2rem;
+}
+
+.address button{
+	background: #fe8371;
+	font-size: 1.1rem;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0 0.4rem;
+}
+
+
+/*订单详情*/
+/*评价*/
+.order ul{
+	padding: 0.8rem 1rem ;
+	background: #FFFFFF;
+	overflow: hidden;
+	margin:  0 0 1rem 0;
+}
+.order ul li{
+	overflow: hidden;
+	padding: 0 0 0.5rem;
+}
+.order ul li:nth-child(1) h2{
+	float: left;
+	background: url(../img/ico02.png) no-repeat 0.3rem center;
+	padding: 0 0 0 1.7rem;
+	font-size: 1.4rem;
+	font-weight: normal;
+}
+
+
+.order ul li:nth-child(2){
+	border-top: 1px solid #e1e1e1;
+	padding: 0.6rem 0.5rem;
+}
+.order ul li:nth-child(2) img{
+	float: left;
+	margin: 0 1rem 0 0;
+	width: 25%;
+}
+.order ul li:nth-child(2) p{
+	padding: 0.3rem 0 0 0 ;
+}
+.order ul li:nth-child(2) p.p-1{
+	font-size: 1.2rem;
+	color: #414141;
+}
+.order ul li:nth-child(2) p.p-2{
+	font-size: 0.8rem;
+	color: #9c9c9c;
+}
+.order ul li:nth-child(2) p:last-child{
+	color: #777;
+	font-size: 1.2rem;}
+
+
+/*金额*/
+.money{
+	background: #fff;
+	padding: 0.8rem 1rem ;
+	font-size: 1.2rem;
+	color: #595959;
+	margin-bottom: 7rem;
+}
+.money ul{
+	overflow: hidden;
+}
+.money ul li:nth-child(1){
+	padding: 0 0.5rem 0.8rem;
+}
+.money ul li:nth-child(2){
+	color: #777;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 0.8rem 0.5rem;
+}
+.money ul li span.fe6{
+	color: #fe624e;
+	float: right;
+}
+
+
+.money ul li:nth-child(3){
+	float: right;
+	padding: 0.8rem 0 0;
+	font-size: 1.4rem;
+	color: #292929;
+}
+.money ul li:nth-child(3) p:first-child{
+	text-align: right;
+}
+.money ul li:nth-child(3) p:first-child span:last-child{
+	color: #fe624e;
+	font-size: 1.8rem;
+}
+.money ul li:nth-child(3) p:last-child{
+	color: #7b7b7b;
+	font-size: 1.0rem;
+}
+
+
+
+/*联系客服*/
+
+.service{
+	background: #fff;
+	padding: 0.6rem 0.8rem;
+	overflow: hidden;
+}
+.service span{
+	float: left;
+	font-size: 1.2rem;
+	text-align: center;
+	padding: 0 0 0 0.5rem;
+}
+.service span img{
+	width: 50%;
+}
+.service p.fr{
+	float: right;
+	padding: 1.5rem 0;
+}
+.service p.fr a{
+	background: #f7f7f7;
+	font-size: 1.2rem;
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+}
+.service p.fr a:last-child{
+	background: #fd5c4a;
+	color: #fff;
+	border-radius: 5px;
+	margin: 0 0 0 0.5rem;
+}
+
+
+
+

@@ -1,0 +1,191 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/gwc1.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/gwc1.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<span>购物车</span>
+			<a href="###" class="right1">
+				<img src="../img/head-2.png" />
+			</a>
+			<a href="###" class="right2">
+				<img src="../img/head-3.png"/>
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<section>
+			<div class="pinp">
+				<div class="head">
+					<div class="lft">
+						<span></span>
+						<p>CLOTtee潮流品牌</p>
+					</div>
+				</div>
+				<div class="mian">
+					<div class="yp">
+						<img src="../img/yangp.png"/>
+					</div>
+					<p>CLOT领导的支线品牌，新品延续了各种 潮流文化中</p>
+					<a>加入了调侃、自嘲以及玩味的元素 </a>
+					<div class="mian_shu">
+						<div>
+							<span>颜色</span>
+						</div>
+						<div>
+							<i></i>
+						</div>
+						<div class="geshu">
+							<span>-</span>
+							<input type="text" value="1" id="number" />
+							<b>+</b>
+						</div>
+					</div>
+				</div>
+				<div class="xian"></div>
+				<div class="shoudan">
+					<a>首单立返30元</a>
+					<span>￥<i class="price">164</i></span>	
+				</div>
+			</div>
+		</section>
+		<div class="qxuan">
+			<div class="qxuan1">
+				<span></span>
+				<i>全选</i>
+			</div>
+			<div class="qxuan3">
+				<a href="qrdd.html">
+					<button>结算</button>
+				</a>
+			</div>
+			<div class="qxuan2">
+				<p>
+					<span>运费</span>
+					<a>￥164</a>
+				</p>
+				<p>
+					<span>总金额</span>
+					<a>￥164</a>
+				</p>
+			</div>
+		</div>
+		<footer>
+			<ul>
+				<li>
+					<a href="../../shouye/html/shouye.html">
+						<img src="../img/daoh1.png"/>
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="../../fenlei/html/fenl.html">
+						<img src="../img/daoh2.png"/>
+						<span>分类</span>
+					</a>
+				</li>
+				<li class="fenlei">
+					<a>
+						<img src="../img/daoh3.png"/>
+						<span>购物车</span>
+					</a>
+				</li>
+				<li>
+					<a href="../../grzx/html/grzx-app.html">
+						<img src="../img/daoh4.png"/>
+						<span>个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+		<script type="text/javascript">
+
+			$(".geshu").find("span").click(function(){
+				var a=$('input#number').val();
+				if(a<1){
+					alert("不能少于一件");
+					$('input#number').val(1);
+					$(".price").text(164);
+					return false;
+				}				//先进行判断input的value是否等于1
+				a--;
+				// alert(a);
+				$('input#number').val(a);
+
+				var c=a*164;   //计算总价
+				$(".price").text(c);
+			
+			})
+			$(".geshu").find("b").click(function(){
+				var a=$('input#number').val();
+				a++;
+				// alert(a);
+				$('input#number').val(a);
+
+				var c=a*164;
+				$(".price").text(c);
+			})
+			
+			$('input#number').keyup(function(){
+				// console.log($(this).val());
+				var value_input=$('input#number').val();
+				if(value_input>=1){
+					// var d=Number($('input#number').val());
+					var d=value_input
+					var c=d*164;
+					$(".price").text(c);
+				}
+				if(value_input<1&&value_input!=""){
+					// if(){
+					// 	return false;
+					// }
+					alert("不能少于一件");
+					$('input#number').val(1);
+					$(".price").text(164);
+					
+				}
+				if(value_input==""){
+					// console.log('kong');
+				}
+				
+				// if(d==1){
+				// 	alert("不能少于一件");
+				// 	$('input#number').val(1);
+				// 	return false;
+				// }	
+				
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,305 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:hover,a:focus,a:active{outline: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+	font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+
+/* 主要内容 */
+
+/* 左半部分 */
+
+/* 个人中心 */
+
+.main{
+    padding: 28px 0 0 0;
+    overflow: hidden;
+}
+.main-l,.main-r{
+    float: left;
+}
+.ucenter{
+    height:250px;
+    width:170px;
+}
+.ucenter h2{
+    height:49px;
+    width:170px;
+    background: #F84C84;
+    font-size: 18px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+}
+.ucenter h2 span{
+    font-size: 12px;
+}
+.ucenter ul{
+    background: #f5f5f5;
+}
+.ucenter ul li{
+    padding: 0 0 0 34px;
+    height:40px;
+    border-bottom: 1px solid #BDBDBD;
+    line-height: 40px;
+}
+.ucenter ul li>a{
+    color: #787878;
+}
+
+
+
+/* 右半部份 */
+.main-r{
+    width:792px;
+    margin: 0 0 0 18px;
+}
+/* 导航 */
+.main-nav{
+    width:792px;
+    height:49px;
+    background: #F84C84;
+}
+.main-nav ul{
+    padding: 0 0 0 40px;
+}
+.main-nav ul li{
+    float: left;
+    line-height: 49px;
+    color: #fff;
+    width:90px;
+}
+/* 下一页 */
+.nextp{
+    width:792px;
+    height:30px;
+    background: #eaeceb;
+    margin: 35px 0 0 1px;
+}
+.fr{
+    float: right;
+}
+/* 数字 */
+.nextp ol,input,button{
+    float: left;
+}
+.nextp ol li{
+    float: left;
+    line-height: 30px;
+    margin:5px;
+}
+.nextp li>a{
+    display:block;
+    color: #3a3a3a;
+    height:19px;
+    width:19px;
+    line-height: 19px;
+    text-align: center;
+}
+.nextp li.current a{
+    background: #f74d84;
+    color:#fff;
+}
+/* input */
+.nextp input{
+    width:32px;
+    height:17px;
+    border: 1px solid #A6A6A6;
+    margin: 6px 11px 0 3px;
+}
+/* 按钮 */
+.nextp button{
+    background: #f74d84;
+    width:48px;
+    height:19px;
+    margin: 6px 7px 0 0;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}
+/* 详情 */
+
+.detail{
+    margin: 38px 0 0 0;
+    width: 795px;
+    overflow: hidden;
+}
+.detail ul{
+    padding: 2px;
+    width: 253px;
+    height:417px;
+    float: left;
+    margin: 0 10px 15px 0 ;
+}
+.detail ul.mgn{
+    margin: 0;
+}
+.mj{
+    padding: 15px 0 0 10px;
+    width:245px;
+}
+
+.mj1 a{
+    color: #424242;
+    font-size: 18px;
+}
+.mj2{
+    margin: 10px 0 15px 0;
+}
+.mj2 a{
+    color: #A6A6A6;
+}
+.mj3 span:first-child{
+    font-size: 18px;
+    color: #F84C86;
+}
+.mj3 span:last-child{
+    color: #a6a6a6;
+    float: right;
+    padding: 5px 0 0 0;
+}
+
+.detail ul:hover{
+    border: 2px solid #F95D8D;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

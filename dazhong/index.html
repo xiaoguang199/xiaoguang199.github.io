@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>zepto移动端实战模板</title>
+	<meta name="viewport" content="width=divice-width,initial-scale=1.0,user-scaleable=0">
+	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<script type="text/javascript" src="js/zepto.js"></script>
+	<style>
+		*{margin: 0;padding: 0;}
+		html,body{
+			height: 100%;
+		}
+		.page_1_1,.page_2_1,.page_2_2,.page_3_1,.page_3_2,.page_4_1,.page_4_2,.page_4_2,.page_5_1{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+		.current{
+			z-index: 1;
+		}
+		.hide{
+			display: none;
+		}
+		.wrap{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background-color: #083846;
+			overflow: hidden;
+		}
+		.wrap .top{
+			width: 250px;
+		    height: 304px;
+		    position: absolute;
+		    top: 0%;
+		    left: 50%;
+		    margin-left: -125px;
+		}
+		.wrap .content{
+			width: 214px;
+		    height: 145px;
+		    position: absolute;
+		    top: 57%;
+		    left: 50%;
+		    margin-left: -107px;
+		}
+		.wrap .btn{
+			width: 28px;
+		    height: 15px;
+		    position: absolute;
+		    top: 89%;
+		    left: 50%;
+		    margin-left: -14px;
+		}
+		.wrap1{
+			background-color: #9261BF;
+		}
+		.top1{
+		   	width: 210px;
+		    height: 145px;
+		    position: absolute;
+		    top: 4%;
+		    left: 50%;
+		    margin-left: -105px;    
+		}
+		.zhuan{
+		    width: 227px;
+		    height: 228px;
+		    position: absolute;
+		    top: 30%;
+		    left: 50%;
+		    margin-left: -123px;
+		}
+		.content1{
+		    width: 254px;
+		    height: 228px;
+		    position: absolute;
+		    top: 36%;
+		    left: 50%;
+		    margin-left: -124px;
+		}
+		.btn1{
+		   width: 148px;
+	    height: 17px;
+	    position: absolute;
+	    top: 77%;
+	    left: 50%;
+	    margin-left: -74px;
+		}
+		.point{
+			width: 28px;
+		    height: 7px;
+		    position: absolute;
+		    top: 84%;
+		    left: 50%;
+		    margin-left: -14px;
+		}
+		.wrap2{
+			background: #9261BF;
+		}
+		.top2{
+			width: 294px;
+		    height: 354px;
+		    position: absolute;
+		    top: 2%;
+		    left: 50%;
+		    margin-left: -147px;
+		}
+		.content2{
+			width: 214px;
+		    height: 45px;
+		    position: absolute;
+		    top: 68%;
+		    left: 50%;
+		    margin-left: -107px;
+		}
+		.wrap3{
+			background: #F3533C;
+		}
+		.top3{
+	        width: 218px;
+		    height: 161px;
+		    position: absolute;
+		    top: 2%;
+		    left: 50%;
+		    margin-left: -109px;
+		}
+
+		.content3{
+			width: 185px;
+		    height: 238px;
+		    position: absolute;
+		    top: 30%;
+		    left: 50%;
+		    margin-left: -93px;
+		}
+		.wrap4{
+			background: #F3533C;
+		}
+		.wrap5{
+			background: #FFBF50;
+		}
+		.content5{
+			width: 203px;
+		    height: 230px;
+		    position: absolute;
+		    top: 30%;
+		    left: 50%;
+		    margin-left: -100px;
+		}
+		.wrap6{
+			background: #FFBF50;
+		}
+		.top7{
+			width: 243px;
+		    height: 245px;
+		    position: absolute;
+		    top: 19%;
+		    left: 50%;
+		    margin-left: -122px;
+		}
+		.middle7{
+			width: 264px;
+		    height: 46px;
+		    position: absolute;
+		    top: 67%;
+		    left: 50%;
+		    margin-left: -132px;
+		}
+	</style>
+</head>
+<body>
+	<div class="page_1_1 current">
+		<div class="wrap" id="wrap">
+			<div class="top pt-page-moveFromTop "></div>
+			<div class="content pt-page-moveFromLeft "></div>
+			<div class="btn pt-page-moveIconUp "></div>
+		</div>
+	</div>
+	<div class="page_2_1 hide">
+		<div class="wrap wrap1" id="wrap1">
+			<div id="top " class="top1 pt-page-moveFromBottom "></div>
+			<div id="zhuan" class="zhuan pt-page-moveCircle"></div>
+			<div id="content" class="content1 pt-page-moveFromLeft"></div>
+			<div id="btnl" class="btn1 pt-page-scaleUp"></div>
+			<div id="point" class="point pt-page-scaleUp"></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div>
+	</div>
+	<div class="page_2_2 hide">
+		<div class="wrap wrap2" id="wrap2">
+			<div class="top2 pt-page-flipInLeft"></div>
+			<div class="content2 pt-page-flipInLeft "></div>
+			<div class=" point point1 pt-page-flipInLeft "></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div> 
+	</div>
+	<div class="page_3_1 hide">
+		<div class="wrap wrap3" id="wrap3">
+			<div  class="top3 pt-page-moveFromBottom "></div>
+			<div  class=" zhuan zhuan3 pt-page-moveCircle"></div>
+			<div  class=" content2 content3 pt-page-moveFromLeft"></div>
+			<div class=" btn1 btn3 pt-page-scaleUp"></div>
+			<div class="point point2 pt-page-scaleUp"></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div>
+	</div>
+	<div class="page_3_2 hide">
+		<div class="wrap  wrap4" id="wrap4">
+			<div class="top2 top4 pt-page-flipInLeft"></div>
+			<div class="content2 content4 pt-page-flipInLeft"></div>
+			<div class=" point point3 pt-page-flipInLeft"></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div> 
+	</div>
+	<div class="page_4_1 hide">
+		<div class="wrap wrap5" id="wrap5">
+			<div  class=" top3 top5 pt-page-moveFromBottom "></div>
+			<div  class=" zhuan zhuan5 pt-page-moveCircle"></div>
+			<div  class=" content2 content5 pt-page-moveFromLeft"></div>
+			<div class=" btn1 btn5 pt-page-scaleUp"></div>
+			<div class="point point4 pt-page-scaleUp"></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div>
+	</div>
+	<div class="page_4_2 hide">
+		<div class="wrap  wrap6" id="wrap6">
+			<div class="top2 top6  pt-page-flipInLeft"></div>
+			<div class="content2 content6  pt-page-flipInLeft"></div>
+			<div class=" point point5  pt-page-flipInLeft"></div>
+			<div class="btn pt-page-moveIconUp"></div>
+		</div> 
+	</div>
+	<div class="page_5_1 hide">
+		<div class=" wrap wrap7" id="wrap7">
+			<div class="top7 pt-page-rotateCubeBottomIn"></div>
+			<div class="middle7 pt-page-rotateCubeTopIn"></div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	
+	var arr=[[],[],[],[],[],[]];
+	$.ajax({
+		type:"get",
+		url:"http://180.76.185.227/lj/zepto/zeptoPhp1.php",
+		success:function(d){
+			console.log(d)
+			var data = JSON.parse(d)
+			console.log(data)
+			arr.push(data.msg,data.msg1,data.msg2,data.msg3,data.msg4,data.msg5);
+			arr[0].push(data.msg.dot,data.msg.dot2,data.msg.icon);
+			arr[1].push(data.msg1.photo,data.msg1.title);
+			arr[2].push(data.msg2.btn,data.msg2.btn2,data.msg2.people,data.msg2.photo,data.msg2.photo2,data.msg2.title);
+			arr[3].push(data.msg3.btn,data.msg3.btn2,data.msg3.people,data.msg3.photo,data.msg3.photo2,data.msg3.title);
+			arr[4].push(data.msg4.btn,data.msg4.btn2,data.msg4.people,data.msg4.photo,data.msg4.photo2,data.msg4.title);
+			arr[5].push(data.msg5.btn,data.msg5.photo);
+			$(".wrap .top").css({
+				background:"url("+arr[1][0]+")",
+				backgroundSize:"100% 100%"
+			})
+			$(".wrap .content").css({
+				background:"url("+arr[1][1]+")",
+				backgroundSize:"100% 100%"
+			})
+			$(".wrap .btn").css({
+				background:"url("+arr[0][2]+")",
+				backgroundSize:"100%",
+			})
+			// .............1——1.........
+			$(".wrap1 .top1").css({
+				background:"url("+arr[2][5]+")",
+				backgroundSize:"100% 100%",
+			})
+			$(".wrap1 .zhuan").css({
+				background:"url("+arr[2][3]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap1 .content1").css({
+				background:"url("+arr[2][2]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap1 .btn1").css({
+				background:"url("+arr[2][0]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap1 .point").css({
+				background:"url("+arr[0][0]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap1 .btn").css({
+				background:"url("+arr[0][2]+")",
+				backgroundSize:"100%",
+			})
+			// ..............2-1.................
+			$(".wrap2 .top2").css({
+				background:"url("+arr[2][4]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap2 .content2").css({
+				background:"url("+arr[2][1]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap2 .point1").css({
+				background:"url("+arr[0][1]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap3 .top3").css({
+				background:"url("+arr[3][5]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap3 .zhuan3").css({
+				background:"url("+arr[3][3]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap3 .content3").css({
+				background:"url("+arr[3][2]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap3 .btn3").css({
+				background:"url("+arr[3][0]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap3 .point2").css({
+				background:"url("+arr[0][0]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap4 .top4").css({
+				background:"url("+arr[3][4]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap4 .content4").css({
+				background:"url("+arr[3][1]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap4 .point3").css({
+				background:"url("+arr[0][1]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap5 .top5").css({
+				background:"url("+arr[4][5]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap5 .zhuan5").css({
+				background:"url("+arr[4][3]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap5 .content5").css({
+				background:"url("+arr[4][2]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap5 .btn5").css({
+				background:"url("+arr[4][0]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap5 .point4").css({
+				background:"url("+arr[0][0]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap6 .top6").css({
+				background:"url("+arr[4][4]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap6 .content6").css({
+				background:"url("+arr[4][1]+")",
+				backgroundSize:"100% 100% ",
+			})
+			$(".wrap6 .point5").css({
+				background:"url("+arr[0][1]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap7 .top7").css({
+				background:"url("+arr[5][1]+")",
+				backgroundSize:"100%",
+			})
+			$(".wrap7 .middle7").css({
+				background:"url("+arr[5][0]+")",
+				backgroundSize:"100%",
+			})
+		}
+
+	})
+
+
+	// 因为移动端毕竟与PC端不同，因此需要阻止一下浏览器的默认事件
+	document.addEventListener("touchmove",function(event){
+		event.preventDefault();
+	},false);
+	// 设置当前页面所处的行数与列数，设置刚划走页面所处的行数与列数
+	var nowRow=1;
+	var nowCol=1;
+
+	var lastRow=0;
+	var lastCol=0;
+
+	// 设置滑页的手势方向
+	var up=1;
+	var down=2;
+	var left=3;
+	var right=4;
+
+	var ani=false;
+	$(document).swipeUp(function(){
+		if (ani) {return};
+		lastRow=nowRow;
+		lastCol=nowCol;
+		if (lastRow!=5) {
+			nowRow += 1;
+			nowCol =1;
+			pageMove(up);
+		};
+	})
+	$(document).swipeDown(function(){
+		if (ani) {return};
+		lastRow=nowRow;
+		lastCol=nowCol;
+		if (lastRow!=1) {
+			nowRow -= 1;
+			nowCol =1;
+			pageMove(down);
+		};
+	})
+	$(document).swipeLeft(function(){
+		if (ani) {return};
+		lastRow=nowRow;
+		lastCol=nowCol;
+		if (lastRow>1&&lastRow<5&&lastCol!=2) {
+			nowCol +=1;
+			nowRow = lastRow;
+			
+			console.log("L.page_"+lastRow+"_"+lastCol,"L.page_"+nowRow+"_"+nowCol)
+			pageMove(left);
+		};
+	})
+	$(document).swipeRight(function(){
+		if (ani) {return};
+		lastRow=nowRow;
+		lastCol=nowCol;
+		if (lastRow>1&&lastRow<5&&lastCol!=1) {
+			nowCol -=1;
+			nowRow = lastRow;
+			console.log("R.page_"+lastRow+"_"+lastCol,"R.page_"+nowRow+"_"+nowCol)
+			pageMove(right);
+		};
+	})
+	function pageMove(x){
+		var prev=".page_"+lastRow+"_"+lastCol;
+		var next=".page_"+nowRow+"_"+nowCol;
+		console.log(prev,next);
+		var outClass,inClass;
+		if(x==up){
+			outClass="pt-page-moveToTop";
+			inClass="pt-page-moveFromTop";
+		}
+		if(x==down){
+			outClass="pt-page-moveToBottom";
+			inClass="pt-page-moveFromTop";
+		}
+		if (x==left) {
+			outClass="pt-page-moveToLeft";
+			inClass="pt-page-moveFromRight";
+		};
+		if (x==right) {
+			outClass="pt-page-moveToRight";
+			inClass="pt-page-moveFromLeft";
+		};
+		ani=true;
+		$(prev).addClass(outClass);
+		$(next).removeClass("hide");
+		$(next).addClass(inClass);
+		setTimeout(function(){
+			$(prev).removeClass("current");
+			$(prev).removeClass(outClass);
+			$(prev).addClass("hide");
+			$(next).addClass("current");
+			$(next).removeClass(inClass);
+			ani=false;
+		},20);
+	}
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+/*logo*/		
+.logo{
+	width: 100%;
+	height: 4.7rem;
+	margin-top: 5.83rem;
+	margin-bottom: 2.08rem;
+	/*margin-top: 3.33rem;*/
+}
+.logo img{
+	width: 15.0rem;
+	height: 4.7rem;
+	display: block;
+	margin: 0 auto;
+}
+/*验证*/
+.yanz{
+	width: 100%;
+}
+.ipt{
+	width: 100%;
+	/*height: 3.25rem;*/
+	background: white;
+	line-height: 3.25rem;
+}
+.ipt span{
+	font-size: 1.0rem;
+	margin-left: 1.1rem;
+}
+.ipt input{
+	width: 70%;
+	height:1.5rem ;
+	font-size: 0.9rem;
+	margin-left: 1.1rem;
+	outline: none;
+}
+button{
+	display: block;
+	width: 90%;
+	height: 3.125rem;
+	color: white;
+	margin: 0 auto;
+	margin-top: 1.46rem;
+	background: #FF6A52;
+	border-radius: 0.13rem;
+	font-size: 1.17rem;
+	outline: none;
+}
+.hlep{
+	width: 100%;
+	overflow: hidden;
+}
+.hlep a{
+	float: right;
+	font-size: 0.83rem;
+	margin-top: 0.83rem;
+	margin-right: 1.51rem;
+}
+.zhuc{
+	width: 100%;
+	/*height: 3.13rem;*/
+	margin-top: 2.29rem;
+	margin-bottom: 3.13rem;
+}
+.zhuc div{
+	width: 60%;
+	/*height: 3.13rem;*/
+	line-height: 3.13rem;
+	margin: 0 auto;
+	font-size: 1.17rem;
+}
+.zhuc a{
+	display: inline-block;
+	width: 5.75rem;
+	height: 2.0rem;
+	line-height: 2.0rem;
+	text-align: center;
+	border: 1px solid #FF6A52;
+	border-radius: 0.13rem;
+}
+/*其他*/
+.other{
+	width: 100%;
+	height: 12.29rem;
+}
+.dl{
+	display: block;
+	height: 4.17rem;
+	background: url(../img/bg1.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+.other a{
+	display: block;
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	/*margin: 0 2.5rem;*/
+}
+.other a img{
+	width: 3.96rem;
+	height: 3.98rem;
+}
+
+

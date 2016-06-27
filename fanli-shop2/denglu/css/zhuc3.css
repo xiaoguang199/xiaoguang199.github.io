@@ -1,0 +1,143 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+.mian{
+	width: 100%;
+}
+.mian .top{
+	width: 100%;
+	font-size: 0.92rem;
+	color: #959595;
+	margin-top: 1.88rem;
+	margin-bottom: 0.83rem;
+}
+.mian .top p{
+	margin-left: 0.83rem;
+}
+.mian .mid{
+	width: 100%;
+	height: 3.13rem;
+	line-height: 3.13rem;
+	
+	background: white;
+	margin-bottom: 1.5rem;
+}
+.mid span{
+	font-size: 1.0rem;
+	margin-left: 0.83rem;
+}
+.mid input{
+	width: 70%;
+	height: 1.5rem;
+	margin-left: 0.83rem;
+	font-size: 0.83rem;
+	outline: none;
+}
+.mian button{
+	width: 90%;
+	height: 3.13rem;
+	font-size: 1.17rem;
+	color: white;
+	background: #fe6a52;
+	outline: none;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.13rem;
+	margin-bottom: 1.17rem;
+}
+.mian .btm{
+	width: 8.21rem;
+	float: right;
+	margin-right: 1.42rem;
+}
+.btm span{
+	font-size: 0.83rem;
+}
+.btm a{
+	font-size: 0.83rem;
+	color: #fd8b7b;
+	display: inline-block;
+	width: 2.58rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	text-align: center;
+	border: 1px solid #fd8b7b;
+	border-radius: 0.13rem;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+/*底部*/
+.footer{
+    background: #f5f5f5;
+}
+/*媒体合作*/
+.media{
+    padding:45px 0 0 35px;
+    overflow:hidden;
+}
+.media li{
+    float:left;
+    margin:0 25px 0 0;
+}
+.media li>a{
+    color:#9c9c9c;
+    font-size:14px;
+}
+/*联系电话*/
+.phone{
+    padding-top:30px;
+}
+.phone li{
+    margin:0 55px 0 0;
+}
+
+/*版权*/
+.copyright{
+    text-align:center;
+    padding:65px 0 35px 0;
+    color:#555;
+}

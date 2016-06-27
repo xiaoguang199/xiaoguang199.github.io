@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>返利商城-个人中心-未登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/grzx-wdl.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script src="../js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/kongzhisuofang.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<span>个人中心</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--姓名-->
+		<div class="name">
+			<img src="../img/toux04.png"/>
+			<p>您还未登录，点击登录</p>
+		</div>
+		<!--导航-->
+		<div class="nav">
+			<ul>
+				<a href="#">
+					<li>待支付</li>
+				</a>
+				<a href="#">
+					<li>待发货</li>
+				</a>
+				<a href="#">
+					<li>全部订单</li>
+				</a>
+			</ul>
+		</div>
+		<!--内容-->
+		<div class="main">
+			<ul>
+				<li>
+					<a href="#">账户与安全</a>
+				</li>
+				<li>
+					<a href="#">我的关注</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">我的下线</a>
+				</li>
+				<li>
+					<a href="#">我是商家</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="#">我的优惠券</a>
+				</li>
+			</ul>
+		</div>
+		<!--导航栏-->
+		<footer>
+			<ul>
+				<li>
+					<a>
+						<img src="../img/daoh1.png" />
+						<span>首页</span>
+					</a>
+				</li>
+				<li>
+					<a href="../../fenlei/html/fenl.html">
+						<img src="../img/daoh2.png" />
+						<span>分类</span>
+					</a>
+				</li>
+				<li>
+					<a href="../../gouwuche/html/gwc1.html">
+						<img src="../img/daoh3.png" />
+						<span>购物车</span>
+					</a>
+				</li>
+				<li class="fenlei">
+					<a href="../../grzx/html/grzx-app.html">
+						<img src="../img/daoh4.png" />
+						<span>个人中心</span>
+					</a>
+				</li>
+			</ul>
+		</footer>
+
+	</body>
+	<script type="text/javascript">
+	$(function(){
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	})
+	</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

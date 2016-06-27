@@ -1,0 +1,158 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+.icon-rentubiao:before { content: "\e6bc"; }
+
+
+
+
+.type{
+	position: relative;
+}
+.shadow{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+/*banner*/
+.gywm-ban a img{
+	width:100%;
+	height:643px;
+	position: relative;
+}
+/*蒙泰图*/
+.mongolia{
+	width: 100%;
+	height:643px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.parlor{
+	position: absolute;
+	top: 225px;
+	left: 50%;
+	margin: 0 0 0 -400px;
+	width:777px;
+	height:350px;
+	text-align: center;
+}
+.parlor h2{
+	height:88px;
+}
+.parlor h2 a{
+	text-align: center;
+	font-size: 88px;
+	color: #fff;
+}
+.parlor p{
+	font-size: 40px;
+	color: #FFF;
+	margin: 30px 0 55px 0;
+	height:40px;
+}
+.parlor span{
+	display: inline-block;
+	width:362px;
+	height:85px;
+	border: 2px solid #FFF;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 32px;
+	line-height: 85px;
+}
+/*内容*/
+.main{
+	text-align: center;
+	padding: 27px 0 0 0;
+}
+.main p:first-child{
+	color:#363636;
+	margin: 0 0 18px 0;
+}
+.main p:nth-child(2),.main p:nth-child(3){
+	color: #c4c4c4;
+	font-size: 10px;
+}
+.main p:nth-child(3){
+	margin: 0 0 32px 0;
+}
+
+
+
+
+
+
+
+
+
+
+

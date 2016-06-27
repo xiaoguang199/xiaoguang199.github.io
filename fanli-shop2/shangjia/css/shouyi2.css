@@ -1,0 +1,216 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	margin-top: 3.69rem;
+	margin-bottom: 5.0rem;
+}
+.cp{
+	width: 100%;
+}
+.cp li{
+	width: 100%;
+	background: white;
+	margin-bottom: 0.42rem;
+}
+.head{
+	width: 90%;
+	height: 2.29rem;
+	line-height: 2.29rem;
+	margin: 0 auto;
+	border-bottom: 0.1rem solid #e3e3e3;
+	overflow: hidden;
+}
+.head p{
+	display: inline-block;
+}
+.lft{
+	float: left;
+	font-size: 1.17rem;
+}
+.lft img{
+	display: inline-block;
+	width: 0.42rem;
+	height: 0.63rem;
+	margin-right: 0.63rem;
+	vertical-align: middle;
+}
+.mian{
+	 width: 90%;
+	 height: 6.25rem;
+	 margin: 0 auto;
+	 overflow: hidden;
+	 border-bottom: 0.1rem solid #e3e3e3;
+}
+.mian img{
+	width: 4.79rem;
+	height: 5.21rem;
+	margin-top: 0.52rem;
+	margin-right: 0.83rem;
+	vertical-align: top;
+	float: left;
+}
+.mian p{
+	width: 70%;
+	font-size: 1.0rem;
+	margin-top: 0.53rem;
+	float: left;
+}
+.mian a{
+	width: 70%;
+	float: left;
+	font-size: 1.0rem;
+	margin-top: 0.53rem;
+}
+
+footer{
+	width: 100%;
+}
+.content{
+	width: 90%;
+	height: 3.33rem;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.content span{
+	float: left;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	font-size: 1.0rem;
+}
+.content i{
+	float: left;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	font-size: 1.17rem;
+}
+.content a{
+	display:inline-block;
+	float: right;
+	width: 5.0rem;
+	height: 1.67rem;
+	line-height: 1.67rem;
+	font-size: 0.92rem;
+	border: 0.1rem solid #fd5c4a;
+	border-radius: 0.21rem;
+	text-align: center;
+	margin-top: 0.82rem;
+	color: #fd5c4a;
+}
+
+.foot{
+	width: 100%;
+	height: 4.17rem;
+	background: white;
+	position: fixed;
+	bottom: 0;
+	padding-top: 0.5rem;
+}
+button{
+	display: block;
+	width: 90%;
+	height: 3.25rem;
+	display: block;
+	margin: 0 auto;
+	background: #fd5c4a;
+	color: white;
+	font-size: 1.17rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

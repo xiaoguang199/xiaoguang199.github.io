@@ -1,0 +1,138 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	margin-top: 3.76rem;
+}
+.guanl{
+	width: 100%;
+	height: 5.0rem;
+	background: white;
+	margin-bottom: 0.63rem;
+	overflow: hidden;
+}
+.lft{
+	float: left;
+	height: 5.0rem;
+}
+.lft img{
+	width: 2.5rem;
+	margin-top: 1.23rem;
+	margin-left: 0.63rem;
+}
+.mid{
+	float: left;
+	height: 5.0rem;
+	margin-left: 1.0rem;
+}
+.mid p{
+	margin-top: 1.23rem;
+}
+.rgt{
+	float: right;
+	height: 5.0rem;
+	margin-right: 0.42rem;
+}
+.rgt span{
+	display: block;
+	width: 4.29rem;
+	height: 1.67rem;
+	line-height: 1.67rem;
+	margin-top: 0.5rem;
+	border: 0.15rem solid #e2e2e2;
+	text-align: center;
+	border-radius: 10%;
+	color: #e2e2e2;
+}
+.rgt span:nth-child(2){
+	border: 0.15rem solid #fe6c52;
+	color: #fe6c52;
+}
+
+.rgt2 span{
+	border: 0.15rem solid #fe6c52;
+	color: #fe6c52;
+	margin-top: 1.53rem;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>管理优惠券</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/youh3.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/youh3.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="youh1.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>管理优惠券</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<section>
+			<div class="guanl">
+				<div class="lft">
+					<img src="../img/形状-3.png"/>
+				</div>
+				<div class="mid">
+					<p>嘿哈宝贝20元优惠券</p>
+					<a>截止到2016.1.14</a>
+				</div>
+				<div class="rgt">
+					<span>删除</span>
+					<span>发布</span>
+				</div>
+			</div>
+			<div class="guanl">
+				<div class="lft">
+					<img src="../img/形状-3.png"/>
+				</div>
+				<div class="mid">
+					<p>嘿哈宝贝20元优惠券</p>
+					<a>截止到2016.1.14</a>
+				</div>
+				<div class="rgt2 rgt">
+					<span>删除</span>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

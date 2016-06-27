@@ -1,0 +1,170 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:hover,a:focus,a:active{outline: none; }
+a:hover,a:focus,a:active{outline: none; }
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+mark { background: #ff0; }
+
+/*头部*/
+.header{
+	width:100%;
+	height:799px;
+	margin:0 auto;
+	position:relative;
+	overflow:hidden;
+}
+/*半透明背景*/
+.shadow{
+	height:80px;
+	width:100%;
+	background:rgba(227,238,233,0.7);
+	position:absolute;
+	top:0;
+	left:0;
+}
+.inner{
+	width:980px;
+	margin:0 auto;
+} 
+/**logo**/
+.logo{
+	height:67px;
+	width:67px;
+	margin:7px 0 0 0;
+	float:left;
+}
+.logo h1 a{
+	display:block;
+	width:67px;
+	height:67px;
+	background: url(../images/logo.png);
+
+}
+	
+/*nav*/
+.nav{
+	float:left;
+	margin:0 0 0 110px;
+}
+.nav ul li{
+	float:left;
+	width:135px;
+	text-align:center;
+	padding:20px 0 0 0;
+	height: 60px;
+}
+
+/*划过状态*/
+.nav ul li:hover{
+	background: #f74d84;
+    height:60px;
+
+}
+/*.nav ul li.current{
+	background: #f74d84;
+    height:60px;
+	}
+*/.nav ul li:hover a{
+	color:#fff;
+}
+.nav ul li>a{
+	display:block;
+	width:135px;
+	font-size:16px;
+	color:#f74d84;
+	text-decoration:none;
+}
+/*登陆*/
+.login{
+	float:right;
+	margin:0 20px 0 0;
+}
+.login li{
+	float:left;
+	margin:0 0 0 30px;
+	}
+.login li a{
+	color:#530b02;
+	font-size:14px;
+	line-height:80px;
+	text-decoration:none;
+}
+
+
+/*关于我们*/
+.about ul{
+	margin:45px 0 0 0;
+	overflow:hidden;
+}
+.about ul li{
+	float:left;
+	margin:0 73px 0 0;
+	}
+.about ul li span{
+	display:block;
+	width:137px;
+	text-align:center;
+	color:#72d9af;
+	font-size:20px;
+	padding:25px 0 45px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

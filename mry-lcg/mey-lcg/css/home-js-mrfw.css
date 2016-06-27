@@ -1,0 +1,359 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, \5b8b\4f53, sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+	font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+@font-face {font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+
+
+
+
+/*面包屑*/
+.crumbs{
+	height:50px;
+	line-height: 50px;
+}
+.crumbs a span{
+	color: #b7b7b7;
+}
+.crumbs span{
+	color: #6a6a6a;
+	margin: 0 0 0 5px;
+}
+
+/*内容*/
+.main{
+	overflow: hidden;
+	padding: 0 0 35px 0;
+}
+.main-l{
+	float: left;
+}
+.main-r{
+	float: right;
+	width:425px;
+}
+.main-t{
+	border-bottom: 1px solid #EBEBEB;
+	padding: 0 0 20px;
+}
+.main-t h2 a{
+	color: #585858;
+	font-size: 24px;
+	line-height: 24px;
+}
+.main-t p{
+	width:425px;
+	margin: 20px 0 15px 0;
+}
+.main-t p a{
+	font-size: 20px;
+	color:#909090;
+	line-height: 30px;
+}
+.main-t span{
+	color:#f0b544;
+}
+.main-t span:last-child{
+	display: inline-block;
+	width:128px;
+	height:24px;
+	border:1px solid #A39FA0;
+	border-radius: 2px;
+	line-height: 24px;
+	text-align: center;
+	color: #868686;
+	margin: 0 0 0 120px;
+}
+
+
+.main-b ul{
+	padding: 24px 0 0 0;
+}
+.main-b  ul li.warrior span a{
+	font-size: 18px;
+	color:#6B6B6B;
+}
+.main-b  ul li.warrior span{
+	font-size: 14px;
+	color:#7c7c7c;
+}
+/*价格*/
+.main-b  ul li.price{
+	margin: 23px 0 17px 0;
+}
+.main-b  ul li.price s{
+	color: #BEBEBE;
+	margin:  0 235px 0 0 ;
+}
+.main-b  ul li.price span{
+	color: #aeaeae;
+	font-size: 18px;
+}
+.main-b  ul li.price span:last-child{
+	font-size: 16px;
+	color: #7c7c7c ;
+}
+.main-b  ul li.price2 span a{
+	color: #F84C84;
+	font-size: 20px;
+	font-weight: 500;
+}
+/*立即购买*/
+.main-b ul li.buy{
+	margin: 40px 0 0 0;
+}
+.main-b ul li.buy a{
+	float: left;
+	width:189px;
+	height:50px;
+	background: #F84C84;
+	color:#fff;
+	font-size: 20px;
+	line-height: 50px;
+	text-align: center;
+}
+.main-b ul li.buy a:last-child{
+	float: right;
+}
+
+/*服务内容*/
+.service h2,.product h2,.entry h2{
+	border-bottom: 2px solid #F84C84;
+	font-size: 18px;
+	color: #F84C84;
+	padding: 0 0 20px 0;
+}
+.service h2 i,.product h2 i,.entry h2 i{
+	font-size: 12px;
+}
+.service ul{
+	overflow: hidden;
+	padding: 30px 0 30px 0;
+}
+.service ul li{
+	float: left;
+	margin: 0 12px 0 0;
+}
+.service ul li:last-child{
+	margin: 0;
+}
+
+/*项目产品*/
+.product{
+	padding: 0 0 45px 0;
+}
+.product ul{
+	overflow: hidden;
+	padding: 25px 0 0 0;
+}
+.product ul li{
+	float: left;
+	margin: 0 17px 0 0;
+}
+.product ul li:last-child{
+	margin: 0;
+}
+.product ul li p{
+	margin: 15px 0 10px 0;
+}
+.product ul li p a{
+	font-size: 20px;
+	color:#f0b544;
+}
+.product ul li span a{
+	font-size: 16px;
+	color: #a0a0a0;
+}
+
+/*项目说明*/
+.entry{
+	padding: 0 0 29px 0;
+}
+.entry div{
+	padding: 20px 0 0 10px;
+}
+.entry div p{
+	font-size: 16px;
+	color: #969696;
+	line-height: 34px;
+}
+.entry div p span{
+	color: #5b5b5b;
+}
+
+/*购买评价*/
+.f0{
+	background: #f0f0f0;
+	height:3px;
+}
+.pink{
+	background: #F64D84;
+	height: 3px;
+	width: 196px;
+	margin: -3px 0 0 0;
+}
+.evaluation h2{
+	font-size: 16px;
+	color: #525252;
+	padding: 18px 0 15px 0;
+}
+.assess{
+	height:292px;
+	background: #F9F9F9;
+	width:945px;
+	padding: 0 17px 0 18px;
+
+}
+
+.assess h2{
+	color: #8c8c8c;
+	padding: 22px 0 17px 0;
+	border-bottom: 1px solid #ccc;
+}
+.oneass{
+	overflow: hidden;
+	border-bottom: 1px solid #EAEAEA;
+}
+.oneass img{
+	float: left;
+	margin: 13px 0 0 3px;
+}
+.ass{
+	float: left;
+}
+.ass p{
+	margin: 21px 0 0 8px;
+	font-size: 16px;
+	color: #3F3F3F;
+}
+.ass p:last-child{
+	margin:26px 0 39px 8px;
+	color: #8c8c8c;
+	font-size: 14px;
+}
+.ass p span:last-child{
+	font-size: 14px;
+}
+.lastass{
+	border: none;
+}
+
+/* 查看更多 */
+.seemore{
+	height:49px;
+	background: #F4F4F4;
+	margin: 0 auto;
+	width: 980px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 49px;
+	color: #3F3F3F;
+}
+/* 最近浏览 */
+.review .pink{
+	margin: -3px auto 0;
+}
+.review{
+	margin: 63px auto 0;
+	overflow: hidden;
+}
+.review h2{
+	color: #525252;
+	font-size: 16px;
+	text-align: center;
+	margin: 18px 0 38px 0;
+}
+.rev{
+	float: left;
+	margin: 0 15px 0 0;
+	height:455px;
+}
+.rev-main{
+	padding: 22px 0 0 7px;
+}
+.rev-main h3 a{
+	font-size: 16px;
+	color: #424242;
+}
+.rev-main p{
+	margin: 12px 0 17px 0;
+}
+.rev-main p>a{
+	color: #a6a6a6;
+}
+.rev-main span{
+	font-size: 24px;
+	color: #f74d84;
+}
+.rev-main s{
+	font-size: 18px;
+	color: #c2c2c2;
+	margin: 0 0 0 28px;
+}
+
+

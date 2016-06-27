@@ -1,0 +1,176 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>售后服务</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/dingd4.css" />
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/dingd4.js"></script>
+	</head>
+
+	<body>
+		<!--头部-->
+		<header>
+			<a href="dingd1.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>售后服务</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<section>
+			<div class="bg">
+				<div class="head">
+					<div class="lft">
+						<p>CLOTtee潮流品牌</p>
+					</div>
+				</div>
+				<div class="mian">
+					<img src="../img/yangpin.png" />
+					<p>CLOT领导的支线品牌，新品延续了各种 潮流文化中</p>
+					<a>加入了调侃、自嘲以及玩味的元素 </a>
+					<span>x1</span>
+				</div>
+			</div>
+			<div class="bg2 bg">
+				<div class="feiy1">
+					<span>商品总额</span>
+					<a>￥164</a>
+				</div>
+				<div class="feiy2">
+					<span>运费</span>
+					<a>￥5.00</a>
+				</div>
+				<div class="feiy3">
+					<div>
+						<a>￥164</a>
+						<span>实付款：</span>
+					</div>
+					<p>
+						<a>2015-11-09 10:41:24</a>
+						<span>下单时间：</span>
+					</p>
+				</div>
+			</div>
+			<div class="bg3 bg">
+				<div class="content">
+					<span>服务类型</span>
+					<a>换货</a>
+				</div>
+			</div>
+			<div class="bg4 bg">
+				<p>问题描述</p>
+				<div>
+					<input type="text" placeholder="商品与描述不符合，商品破损。" />
+				</div>
+			</div>
+			<div class="bg5 bg">
+				<div class="bg5-1">
+					<p>卖家信息</p>
+				</div>
+				<div class="bg5-2">
+					<span>联系人:</span>
+					<div>
+						<input type="text" placeholder="王飒下"/>
+					</div>
+				</div>
+				<div class="bg5-3">
+					<span>联系电话:</span>
+					<div>
+						<input type="text" placeholder="152******25"/>
+					</div>
+				</div>
+			</div>
+			<div class="bg6 bg">
+				<div class="top1">
+					<p>卖家收货地址</p>
+				</div>
+				<div class="mian-1">
+					<span>收货地址:</span>
+					<select>
+						<option>山西</option>
+					</select>
+					<select>
+						<option>吕梁市</option>
+					</select>
+				</div>
+				<div class="mian-2">
+					<select>
+						<option>中阳县</option>
+					</select>
+				</div>
+				<div class="mian-3">
+					<input type="text" placeholder="山西省吕梁市中阳县摩萨撒街洒下..." />
+				</div>
+			</div>
+			<div class="bg7 bg">
+				<div class="foot">
+					<p>
+						<img src="../img/形状-7.png"/>
+						<a>瓦的文</a>
+					</p>
+					<button>同意</button>
+					<button class="bt1">拒绝</button>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

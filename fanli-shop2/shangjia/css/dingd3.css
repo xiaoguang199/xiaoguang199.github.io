@@ -1,0 +1,366 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+  /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	margin-top: 3.69rem;
+}
+.bg{
+	width: 100%;
+	background: white;
+	margin-bottom: 0.42rem;
+	overflow: hidden;
+}
+.all{
+	width: 90%;
+	height: 5.21rem;
+	margin: 0 auto;
+}
+.lft{
+	width: 80%;
+	height: 5.21rem;
+	line-height: 2.21rem;
+	float: left;
+}
+.lft p{
+	font-size: 1.0rem;
+}
+.lft a{
+	font-size: 0.92rem;
+}
+.rgt{
+	width: 20%;
+	height: 5.21rem;
+	line-height: 5.21rem;
+	float: right;
+	font-size: 0.92rem;
+	color: #fd5c4a;
+	text-align: center;
+}
+
+.bg2{
+	background: url(../img/bg2.png) 0 0 no-repeat;
+	background-size:100% 100%;
+}
+.xinx{
+	width: 90%;
+	height: 7.08rem;
+	line-height: 2.21rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+}
+.xinx-1{
+	width: 100%;
+	overflow: hidden;
+}
+.xinx-1 p{
+	float: left;
+	margin-top: 1.25rem;
+}
+.xinx-1 img{
+	vertical-align: middle;
+	margin-right: 0.42rem;
+}
+.xinx-1 .img1{
+	width: 1.25rem;
+	height: 1.25rem;
+}
+.xinx-1 .img2{
+	width: 0.79rem;
+	height: 1.25rem;
+	margin-left: 2.17rem;
+}
+.xinx-2{
+	width: 100%;
+	overflow: hidden;
+}
+.xinx-2 a{
+	float: left;
+	width: 3.54rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	font-size: 0.92rem;
+	background: #fe8371;
+	text-align: center;
+	margin-top: 0.5rem;
+	border-radius: 0.43rem;
+	margin-right: 0.92rem;
+	color: white;
+}
+.xinx-2 p{
+	float: left;
+	font-size: 1.0rem;
+}
+
+.bg3{
+	width: 100%;
+	height: 9.17rem;
+}
+.head{
+	width: 90%;
+	height: 2.29rem;
+	line-height: 2.29rem;
+	margin: 0 auto;
+	border-bottom: 0.15rem solid #f9f9f9;
+	overflow: hidden;
+}
+.head p{
+	display: inline-block;
+}
+.lft{
+	float: left;
+	font-size: 1.17rem;
+}
+.lft img{
+	display: inline-block;
+	width: 0.42rem;
+	height: 0.63rem;
+	margin-right: 0.63rem;
+	vertical-align: middle;
+}
+.rgt img{
+	width: 1.13rem;
+	height: 1.13rem;
+	margin-left: 0.63rem;
+	vertical-align: middle;
+}
+.mian{
+	 width: 90%;
+	 height: 6.25rem;
+	 margin: 0 auto;
+	 overflow: hidden;
+}
+.mian img{
+	width: 4.79rem;
+	height: 5.21rem;
+	margin-top: 0.52rem;
+	margin-right: 0.83rem;
+	vertical-align: top;
+	float: left;
+}
+.mian p{
+	width: 70%;
+	font-size: 1.0rem;
+	margin-top: 0.53rem;
+	float: left;
+}
+.mian a{
+	width: 70%;
+	float: left;
+	font-size: 1.0rem;
+	margin-top: 0.53rem;
+}
+.mian span{
+	width: 70%;
+	font-size: 1.0rem;
+	display: block;
+	float: left;
+	color: #aaa;
+}
+
+.bg4{
+	width: 100%;
+	height: 11.25rem;
+}
+.feiy1{
+	width: 90%;
+	height: 3.11rem;
+	margin: 0 auto;
+	line-height: 3.11rem;
+	overflow: hidden;
+	border-bottom: 0.1rem solid #eeeeee;
+}
+.feiy1 span{
+	float: left;
+	font-size: 1.0rem;
+}
+.feiy1 a{
+	float: right;
+	font-size: 1.25rem;
+	color: #fd5c4a;
+}
+.feiy2{
+	width: 90%;
+	height: 2.92rem;
+	margin: 0 auto;
+	line-height: 2.92rem;
+	overflow: hidden;
+	border-bottom: 0.1rem solid #eeeeee;
+}
+.feiy2 span{
+	float: left;
+	font-size: 1.0rem;
+}
+.feiy2 a{
+	float: right;
+	font-size: 1.25rem;
+	color: #fd5c4a;
+}
+.feiy3{
+	width: 90%;
+	height: 5.0rem;
+	margin: 0 auto;
+}
+.feiy3 div{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 0.79rem;
+}
+.feiy3 div span{
+	float: right;
+	font-size: 1.17rem;
+	line-height: 2.28rem;
+}
+.feiy3 div a{
+	float: right;
+	font-size: 2.08rem;
+	color: #fd5c4a;
+}
+.feiy3 p{
+	width: 100%;
+}
+.feiy3 p span{
+	float: right;
+	font-size: 0.92rem;
+}
+.feiy3 p a{
+	float: right;
+	font-size: 0.92rem;
+}
+
+.bg5{
+	width: 100%;
+	height: 7.08rem;
+}
+.frist{
+	width: 90%;
+	height: 2.67rem;
+	line-height: 2.67rem;
+	margin: 0 auto;
+	font-size: 1.17rem;
+}
+.mid{
+	width: 100%;
+	height: 0.13rem;
+	background: #f9f9f9;
+}
+.last{
+	width: 90%;
+	height: 4.46rem;
+	font-size: 0.92rem;
+	margin: 0 auto;
+}
+
+.bg6{
+	width: 100%;
+	height: 4.08rem;
+}
+.foot{
+	width: 90%;
+	margin: 0 auto;
+}
+.foot p{
+	float: left;
+	width: 3.0rem;
+	text-align: center;
+	font-size: 0.83rem;
+}
+.foot p img{
+	width: 2.0rem;
+	height: 2.0rem;
+	margin-top: 0.5rem;
+}
+.foot button{
+	float: right;
+	width: 6.25rem;
+	height: 2.13rem;
+	margin-top: 0.92rem;
+	border-radius:0.13rem ;
+	background: #fd5c4a;
+	font-size: 1.0rem;
+	color: white;
+	outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

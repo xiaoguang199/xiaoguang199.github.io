@@ -1,0 +1,88 @@
+.bodyer{
+	width: 640px;
+	height: 3000px;
+}
+.title-1,
+.title-2,
+.title-3,
+.title-4{
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+	width: 600px;
+	height: 80px;
+	font-size: 28px;
+	text-align: center;
+	line-height: 80px;
+}
+.title-1{
+	margin-top: 20px;
+}
+.title-1 i,
+.title-2 i,
+.title-3 i,
+.title-4 i{
+	display: block;
+	position: absolute;
+	top: 40px;
+	width: 188px;
+	height: 2px;
+	background: #dedede;
+}
+.title-1 .l,
+.title-2 .l,
+.title-3 .l,
+.title-4 .l{
+	left: 0;
+}
+.title-1 .r,
+.title-2 .r,
+.title-3 .r,
+.title-4 .r{
+	right: 0;	
+}
+.t1-box{
+	margin: auto;
+	width: 640px;
+	overflow: hidden;
+}
+.t2-box{
+	margin: auto;
+	width: 560px;
+	overflow: hidden;
+}
+.t3-box{
+	margin: auto;
+	width: 535px;
+	overflow: hidden;
+}
+.t4-box{
+	margin: auto;
+	width: 598px;
+	overflow: hidden;
+}
+.t1-text{
+	margin: auto;
+	width: 90%;
+	font-size: 18px;
+	text-align: justify;
+	color: #666;
+}
+.t2-box .jieShao{
+	float: right;
+	margin-top: 25px;
+	width: 410px;
+	height: auto;
+	font-size: 16px;
+	text-align: justify;
+	color: #666;
+}
+
+
+
+
+
+
+
+
+

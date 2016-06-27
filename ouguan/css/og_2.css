@@ -1,0 +1,161 @@
+*{margin: 0;padding: 0;font-family: "Microsoft Yahei";}
+html{font-size: 100px;}
+html,body{
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+    overflow: hidden;
+}
+.container .top{
+    width: 2.44rem;
+    height: 0.68rem;
+    background: url(../img/21.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    margin-left: -1.22rem;
+}
+.container .middle{
+    width: 5.10rem;
+    height: 4.70rem;
+    position: absolute;
+    top: 2.72rem;
+    left: 50%;
+    margin-left: -2.55rem;
+    border-top: 0.02rem solid #c2a3a2;
+    /* border-right: 0; */
+    /* border-left: 0; */
+}
+.container .middle .content{
+    width: 5.40rem;
+    height: 5rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -2.7rem;
+    border-bottom: 0.02rem solid #c2a3a2;
+}
+.container .middle .content .title{
+	width: 5.20rem;
+    height: 0.52rem;
+    position: absolute;
+    top: 0rem;
+    left: 0.05rem;
+    overflow: hidden;
+    /* margin-bottom: 0.1rem; */
+    line-height: 0.2rem;
+}
+.container .middle .content .title li{
+	width: 0.58rem;
+    height: 0.32rem;
+    float: left;
+    margin-left: 1.3rem;
+    color: #fff;
+    font-size: 0.26rem;
+    font-weight: bolder;
+    font-style: oblique;
+    list-style: none;
+    margin-top: 0.1rem;
+}
+.container .middle .content .title .tel{
+    margin-left: 0.7rem;
+    margin-right: -0.48rem;
+}
+.container .middle .content .form{
+	width: 5.40rem;
+    height: auto;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.4rem;
+    overflow: hidden;
+}
+.container .middle .content .form li{
+	width: 5.40rem;
+	height: auto;
+	float: left;
+	list-style: none;
+}
+.container .middle .content .form li span{
+	float: left;
+}
+.container .middle .content .form li .number{
+	font-size: 0.38rem;
+	color: #fff;
+	font-weight: bolder;
+}
+.container .middle .content .form li .qi{
+	font-size: 0.20rem;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    margin-left: 0.05rem;
+}
+.container .middle .content .form li .name{
+	font-size: 0.26rem;
+    font-weight: bold;
+    color: #fff;
+    margin: 0.1rem 0.2rem 0 0.1rem;
+}
+.container .middle .content .form li .phone{
+	font-size: 0.25rem;
+    margin: 0.1rem 0.1rem 0rem 0rem;
+    color: #fff;
+}
+.container .middle .content .form li .jiang{
+	color: #fff;
+    font-size: 0.25rem;
+    font-style: italic;
+    margin-top: 0.1rem;
+}
+.container .bottom{
+    width: 5.40rem;
+    height: 1.55rem;
+    position: absolute;
+    top: 7.8rem;
+    left: 50%;
+    margin-left: -2.7rem;
+    /* border: 1px solid #ccc; */
+}
+.container .bottom .bottom_top{
+	width: 5.40rem;
+	height: 0.62rem;
+	position: absolute;
+	top: 0rem;
+	left: 0rem;
+	 border-bottom: 0.02rem solid #c2a3a2;
+}
+.container .bottom .bottom_top span{
+	color: #fff;
+    font-size: 0.26rem;
+    float: left;
+    margin-left: 1.2rem;
+    font-weight: bolder;
+}
+.container .bottom a{
+ 	width: 5.40rem;
+    height: 0.70rem;
+    text-decoration: none;
+     position: absolute;
+    top: 0.8rem;
+    left: 0rem;
+}
+.container .bottom input{
+    width: 5.40rem;
+    height: 0.70rem;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    background: black;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform:skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform:skewX(-30deg);
+    font-size: 0.33rem;
+    color: #fff;
+}

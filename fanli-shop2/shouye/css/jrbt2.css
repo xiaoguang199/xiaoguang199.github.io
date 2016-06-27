@@ -1,0 +1,246 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+nav{
+	width: 100%;
+	height: 2.92rem;
+	background: white;
+	margin-top: 3.33rem;
+}
+.daoh{
+	width: 100%;
+	overflow: hidden;
+}
+.daoh li{
+	width: 25%;
+	height: 2.92rem;
+	line-height: 2.82rem;
+	float: left;
+	text-align: center;
+	font-size: 1.0rem;
+}
+.daoh li a{
+	display: block;
+	width: 100%;
+	height: 2.82rem;
+}
+
+.daoh li:nth-child(2) a{
+	color: #fe5f4c;
+	border-bottom: 0.1rem solid red;
+}
+
+.lunbo{
+	width: 100%;
+	position: relative;
+	
+}
+.outer{
+	width: 100%;
+	height: 10.0rem;
+	overflow: hidden;
+}
+.inner{
+	width: 200%;
+}
+.inner img{
+	float: left;
+	width: 100%;
+}
+.dian{
+	width: 2.58rem;
+	height: 0.5rem;
+	position: absolute;
+	bottom: 1.0rem;
+	right: 0;
+}
+.dian span{
+	width: 0.42rem;
+	height: 0.42rem;
+	float: left;
+	background: #949495;
+	border-radius: 50%;
+}
+.dian span:nth-child(2){
+	margin: 0 0.83rem;
+	background: #fd573c;
+}
+
+section{
+	width: 100%;
+}
+.content{
+	width: 100%;
+}
+.top{
+	width: 100%;
+	height: 2.13rem;
+	line-height: 2.13rem;
+	overflow: hidden;
+}
+.left{
+	float: left;
+	height: 2.13rem;
+}
+.left a{
+	font-size: 1.17rem;
+	color: #fd573c;
+	margin-left: 0.63rem;
+}
+.left img{
+	height: 1.33rem;
+	vertical-align: middle;
+}
+
+.content1{
+	width: 25.62rem;
+	margin: 0 auto;
+}
+
+.tj-fen{
+	width: 100%;
+	overflow: hidden;
+}
+.tj-fen li{
+	width: 12.46rem;
+	height: 14.17rem;
+	background: white;
+	float: left;
+	margin-bottom: 0.58rem;
+	margin-right: 0.58rem;
+	border-radius: 0.5rem;
+	
+}
+/*.tj-fen li:nth-child(2n-1){
+	margin-left: 0.25rem;
+}*/
+.tj-fen li:nth-child(2n){
+	margin-right: 0;
+}
+.tj-fen li .li-1{
+	width: 100%;
+	height: 8.33rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.li-1 img{
+	width: 100%;
+	margin-top: -2.5rem;
+}
+.tj-fen li .li-2{
+	width: 94%;
+	height: 3.33rem;
+	line-height: 1.6rem;
+	margin: 0 auto;
+	border-bottom: 0.1rem solid #e4e4e4;
+}
+.li-2 p{
+	font-size: 1.08rem;
+}
+.li-2 a{
+	font-size: 0.92rem;
+}
+.tj-fen li .li-3{
+	width: 100%;
+	height: 2.38rem;
+	line-height: 2.38rem;
+	overflow: hidden;
+}
+.li-3 a{
+	float: right;
+	font-size: 0.83rem;
+	margin-right: 0.5rem;
+}
+.li-3 p{
+	float: left;
+	font-size: 1.38rem;
+	overflow: hidden;
+}
+.li-3 span{
+	float: left;
+	color: #fb8476;
+}
+.li-3 del{
+	font-size: 0.83rem;
+	float: left;
+	margin-top: 0.23rem;
+	
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+*{margin: 0;padding: 0;font-family: "宋体"}
+html{font-size: 100px;}
+html,body{
+	height: 100%;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	background: url(../img/bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.container .top{
+	width: 5.13rem;
+	height: 0.64rem;
+	position: absolute;
+	top: 2.7rem;
+	left: 50%;
+	margin-left: -2.565rem;
+	background: url(../img/11.png) no-repeat;
+	background-size: 100% 100%;
+}
+.container .line,.container .line-1{
+	width: 5.07rem;
+	height: 0.02rem;
+	background: url(../img/line.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 3.5rem;
+	left: 50%;
+	margin-left: -2.535rem;
+}
+.container .middle{
+	width: 5.17rem;
+	height: 2.16rem;
+	position: absolute;
+	top: 3.6rem;
+	left: 50%;
+	margin-left: -2.585rem;
+	background: url(../img/12.png) no-repeat;
+	background-size: 100% 100%;
+}
+.container .line-1{
+	position: absolute;
+    top: 5.9rem;
+}
+.container .footer{
+	width: 5.12rem;
+	height: 1.84rem;
+	position: absolute;
+	top: 6.1rem;
+	left: 50%;
+	margin-left: -2.56rem;
+}
+.container .footer a{
+	width: 5.03rem;
+	height: 0.68rem;
+	background: url(../img/bk.png) no-repeat;
+	background-size: 100% 100%;
+	text-decoration: none;
+	display: inline-block;
+	float: left;
+	margin-top: 0.15rem;
+	color: #fff;
+}
+.container .footer a span{
+	font-weight: bold;
+	font-size: 0.37rem;
+    display: inline-block;
+    float: left;
+    margin: 0.1rem 1rem;
+}

@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>签到</title>
+  <link rel="stylesheet" type="text/css" href="../css/moren.css" />
+  <link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+  <script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+  <style type="text/css">
+    html,body{font-size: 24px;margin: 0;padding: 0;}
+    tr{font-size: 1.0rem;}
+    #name{background:white;}
+    header{
+      width: 100%;
+      height: 3.33rem;
+      line-height: 3.33rem;
+      text-align: center;
+      background: url(../img/bg.jpg);
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      z-index: 99;
+    }
+    header span{
+      font-size: 1.5rem;
+      color: white;
+    }
+    header a img{
+      display: inline-block;
+      height: 1.65rem;
+      vertical-align: middle;
+    }
+    .left{
+      height: 1.65rem;
+      float: left;
+      margin-left: 1.0rem;
+    }
+    .right{
+  display: block;
+  width: 3.0rem;
+  height: 3.33rem;
+  float: right;
+  text-align: center;
+  /*margin-right: 1.0rem;*/
+}
+.tankuang{
+  width: 4.79rem;
+  height: 6.67rem;
+  position: fixed;
+  top: 3.25rem;
+  right: 0rem;
+  z-index: 5;
+  background: #f75b42;
+  display: none;
+}
+.tk{
+  width: 100%;
+}
+.tk li{
+  width: 100%;
+  height: 2.22rem;
+  line-height: 2.22rem;
+}
+.tk li a{
+  display: block;
+  width: 100%;
+  height: 2.22rem;
+  color: #ffffff;
+}
+.tk li i{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 1.2rem;
+}
+.tk li span{
+  font-size: 0.92rem;
+}
+    .time{width: 92%;height: 2.5rem;line-height: 2.5rem;overflow: hidden;margin: 0 auto;margin-top: 3.33rem;}
+    .time span{float:left;font-size: 1.5rem;}
+    .time a{float: right;font-size: 1.5rem;color: #555;}
+    .qd{width:100%;background:#f9f9f9;}
+    .btn{width: 80%;height:3.33rem;display:block;margin: 0 auto;background: #fe614f;font-size: 1.17rem;
+  color: white;border-radius: 0.3rem;border:0;outline: none;margin-top: 3.0rem;}
+  </style>
+</head>
+<body>
+    <header>
+      <a href="shouye.html" class="left">
+        <img src="../img/head-1.png" />
+      </a>
+      <span>签到</span>
+      <a href="###" class="right">
+        <img src="../img/head-2.png" />
+      </a>
+    </header><!-- /header -->
+    <div class="tankuang">
+      <ul class="tk">
+        <li>
+          <a class="dian" href="../../shouye/html/shouye.html">
+            <i class="iconfont icon-home"></i>
+            <span>主页</span>
+          </a>
+        </li>
+        <li>
+          <a class="dian" href="../../grzx/html/xxzx.html">
+            <i class="iconfont icon-bf-message"></i>
+            <span>消息</span>
+          </a>
+        </li>
+        <li>
+          <a class="dian" href="../html/qiandao.html">
+            <i class="iconfont icon-qiandao"></i>
+            <span>签到</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="qd">
+      <div class="time">
+        <span><b>2015.11</b></span>
+        <a>本月签到20天</a>
+      </div>
+      <div id="name"></div>
+    </div>
+    <button type="" class="btn">签到</button>
+</body>
+</html>
+<script type="text/javascript" src="../js/qiandao.js"></script>
+  
+
+
+
+<script language="javascript">
+
+function calendar(qd){
+    //重构数组
+    Array.prototype.S=String.fromCharCode(2);
+    Array.prototype.in_array=function(e){
+    var r=new RegExp(this.S+e+this.S);
+    return (r.test(this.S+this.join(this.S)+this.S));
+    };
+    //判断是否为闰年
+    function is_leap(year) { 
+       return (year%100==0?res=(year%400==0?1:0):res=(year%4==0?1:0));
+    }
+    var arr = qd;
+    //当前Date资讯
+    var nstr=new Date();
+    //年份
+    var ynow=nstr.getFullYear();
+    //月份
+    var mnow=nstr.getMonth();
+    //今日日期
+    var dnow=nstr.getDate();
+    //当月第一天Date资讯
+    var n1str=new Date(ynow,mnow,1);
+    //当月第一天星期几
+    var firstday=n1str.getDay();
+    //各月份的总天数
+    var m_days=new Array(31,28+is_leap(ynow),31,30,31,30,31,31,30,31,30,31); 
+    //表格所需要行数
+    var tr_str=Math.ceil((m_days[mnow] + firstday)/7);
+
+    //设置表格第一行（有星期标志）
+    var table =  ("<table  align='center' width='100%'; cellspacing='15.0rem'><tr><td align='center' width='80';>周日</td><td align='center' width='80'>周一</td><td align='center' width='80'>周二</td><td align='center' width='80'>周三</td><td align='center' width='80'>周四</td><td align='center' width='80'>周五</td><td align='center' width='80'>周六</td></tr>");
+    //表格的行
+    for(i=0;i<tr_str;i++) {
+       table += "<tr>";
+       //表格每行的单元格
+       for(k=0;k<7;k++) {
+         //单元格自然序列号
+          idx=i*7+k;
+          //计算日期
+          date_str=idx-firstday+1;
+          //打印日期：今天底色为红
+          (date_str<=0 || date_str>m_days[mnow]) ? date_str="&nbsp;" : date_str=idx-firstday+1;
+          var col = arr.in_array(date_str) ? "#f0f":"#fff";
+          table += date_str==dnow ? "<td align='center' class='user' bgcolor='red'>" + date_str + "</td>" :  "<td align='center' bgcolor='"+col+"'>" + date_str + "</td>";
+
+       }
+       table += "</tr>"; //表格的行结束
+    }
+
+    table += "</table>"; //表格结束
+
+    return table;
+
+}
+
+var id = document.getElementById("name");
+
+id.innerHTML = calendar([1,2,3,7,8,258,88,15,22]);
+var cla = id.getElementsByClassName("user");
+cla[0].onclick = function(){
+    this.style.background = "#0ff";
+}
+</script>
+<script type="text/javascript">
+  $(function(){
+    /****************头部右侧点击选项****************/
+  var j=false;
+  $(".right").on("click",function(){
+    if(j!==true) {
+      $(this).css("background", "#f75b42");
+      $(".tankuang").css("display","block");
+      j=true;
+    }else{
+      $(this).css("background", "");
+      $(".tankuang").css("display","none");
+      j=false;
+    }
+      //console.log(j);
+
+  })
+  /***********点击除了class=dian的地方时让tankuang隐藏*************/
+  $(document).click(function(event){
+    var dj=event.target.className;
+    console.log(dj);
+    if(dj!="right" && dj!="img"){
+      if(dj!="dian"){
+        $(".right").css("background", "");
+        $(".tankuang").css("display","none");
+        j=false;
+      }
+    }
+  })
+  })
+</script>

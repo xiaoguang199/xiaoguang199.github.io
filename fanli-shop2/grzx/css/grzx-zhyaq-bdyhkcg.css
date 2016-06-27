@@ -1,0 +1,232 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+/* 去除iPhone中默认的input样式  清除苹果浏览器的圆角表单*/
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,span{margin:0; padding:0; border:none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#555; background-color:#f9f9f9;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-family: Microsoft YaHei;}
+img{border: none;}
+.scope{min-width:320px; max-width:540px;}
+/* 当浏览器的可视区域小于980px */
+@media screen and (max-width:980px) {
+	#wrap {width: 90%; margin:0 auto;}
+	#content {width: 60%;padding:5%;}
+	#sidebar {width: 30%;}
+	#footer {padding: 8% 5%;margin-bottom: 10px;}
+}
+/* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+	#header {height: auto;}
+	#searchform {position: absolute;top: 5px;right: 0;}
+	#content {width: auto; float: none; margin: 20px 0;}
+	#sidebar {width: 100%; float: none; margin: 0;}
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: none;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* 设置图片视频等自适应调整 */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.video embed, .video object, .video iframe {
+	width: 100%;
+	height: auto;
+}
+html{font-size: 62.5%;}
+button,input{outline: none;}
+
+
+
+
+
+/*头部*/
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+/*内容*/
+.main{
+	margin-top: 3.33rem;
+}
+.main p:first-child{
+	padding: 1rem 1.5rem;
+	font-size: 1.3rem;
+	color: #959595;
+}
+.main p:nth-child(2){
+	padding: 1rem 0 1rem 1.5rem ;
+	color: #424242;
+	background: #fff;
+	border-bottom: 1px solid #e3e3e3;
+}
+.main p:nth-child(2) span{
+	font-size: 1.0rem;
+}
+.main p:nth-child(2) span:first-child{
+	font-size: 1.1rem;
+	background: url(../img/bank.png) no-repeat left center;
+	background-size: 12%;
+	padding:0 2.5rem 0;
+}
+.main p:nth-child(3){
+	padding: 1rem 0 1rem 1.5rem ;
+	background: #fff;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 1.3rem;
+	color: #cecdcd;
+}
+
+
+.mt{
+	text-align: center;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.mt ul{
+	width: 70%;
+	margin: 0 auto;
+	position: fixed;
+	top:15%;
+	left: 50%;
+	margin-left: -35%;
+}
+.mt ul li:first-child{
+	background: #fe6a52;
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 0.8rem 0;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.mt ul li:last-child{
+	background: #fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.mt ul li span{
+	display: block;
+	font-size: 1.2rem;
+	color: #959595;
+	padding: 1.5rem 0;
+}
+.mt ul li button{
+	background: #fe6a52;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.4rem;
+	padding: 0.2rem 1.5rem;
+	margin-bottom: 2rem;
+}
+
+
+
+
+

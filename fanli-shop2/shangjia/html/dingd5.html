@@ -1,0 +1,172 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>待付款</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/dingd5.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/dingd5.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="dingd1.html" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>待付款</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--内容-->
+		<section>
+			<div class="bg">
+				<div class="top">
+					<p>
+						<i>订单号：</i>
+						<span>12354555</span>
+					</p>
+					<a>买家已付款，等待发货</a>
+				</div>
+			</div>
+			<div class="bg bg2">
+				<div class="xinx">
+					<div class="xinx-1">
+						<p>
+							<img class="img1" src="../img/ren.png"/>
+							<span>科夫斯卡</span>
+						</p>
+						<p>
+							<img class="img2" src="../img/shouji.png"/>
+							<span>154*****695</span>
+						</p>
+					</div>
+					<div class="xinx-2">
+						<a>默认</a>
+						<p>北京市东花市北里20号楼6单元501室</p>
+					</div>
+				</div>
+			</div>
+			<div class="bg3 bg">
+				<div class="head">
+					<div class="lft">
+						<img src="../img/多边形-1.png"/>
+						<p>CLOTtee潮流品牌</p>
+					</div>
+				</div>
+				<div class="mian">
+					<img src="../img/yangpin.png"/>
+					<p>CLOT领导的支线品牌，新品延续了各种 潮流文化中</p>
+					<a>加入了调侃、自嘲以及玩味的元素 </a>
+					<span>x1</span>
+				</div>
+			</div>
+			<div class="bg4 bg">
+				<div class="feiy1">
+					<span>商品总额</span>
+					<a>￥164</a>
+				</div>
+				<div class="feiy2">
+					<span>运费</span>
+					<a>￥5.00</a>
+				</div>
+				<div class="feiy3">
+					<div>
+						<a>￥164</a>
+						<span>实付款：</span>
+					</div>
+					<p>
+						<a>2015-11-09 10:41:24</a>
+						<span>下单时间：</span>
+					</p>
+				</div>
+			</div>
+			<div class="bg5 bg">
+				<div class="kuaid">
+					<span>快递公司</span>
+					<a>圆通快递</a>
+				</div>
+				<div class="diz">
+					<span>发货地址</span>
+					<a>山西省太原市迎泽大街125号</a>
+				</div>
+				<div class="danh">
+					<span>快递运单号</span>
+					<a>123598252</a>
+				</div>
+			</div>
+			<div class="bg6 bg">
+				<div class="foot">
+					<p>
+						<img src="../img/形状-7.png"/>
+						<a>王道长</a>
+					</p>
+					<button>确认发货</button>
+					<i>修改价格</i>
+				</div>
+			</div>
+		</section>
+		<div class="tianjia" style="display: none;">
+			<div>
+				<p>修改价格</p>
+				<a><input type="text" placeholder="请输入价格"/></a>
+				<button>确认</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

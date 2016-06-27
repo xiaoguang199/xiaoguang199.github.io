@@ -1,0 +1,123 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+  /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+/*logo*/		
+.logo{
+	width: 100%;
+	height: 4.7rem;
+	background: white;
+	padding-top: 2.5rem;
+	padding-bottom: 2.08rem;
+}
+.logo img{
+	width: 15.0rem;
+	height: 4.7rem;
+	display: block;
+	margin: 0 auto;
+}
+/*内容*/
+.mian{
+	width: 100%;
+	padding-top: 1.67rem;
+}
+.mian p{
+	font-size: 1.0rem;
+	margin-left: 1.0rem;
+	margin-bottom: 1.17rem;
+}
+.mian a{
+	display: inline-block;
+	font-size: 0.83rem;
+	margin-left: 1.0rem;
+	margin-bottom: 2.29rem;
+}
+.mian a img{
+	width: 0.83rem;
+	height: 0.83rem;
+	vertical-align: middle;
+}
+.mian button{
+	width: 90%;
+	height: 3.13rem;
+	font-size: 1.17rem;
+	color: white;
+	background: #fe6a52;
+	outline: none;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.13rem;
+}
+
+
+
+
+
+
+

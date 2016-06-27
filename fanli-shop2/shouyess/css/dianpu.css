@@ -1,0 +1,150 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+
+/*头部*/
+header{
+	width: 100%;
+}
+.tou{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+}
+.tou a{
+	float: left;
+	height: 1.65rem;
+	margin-left: 1.0rem;
+}
+.tou a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+
+}
+.tou div{
+	float: left;
+	display: inline-block;
+	width: 17.75rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	background: white;
+	margin-top: 0.4rem;
+	margin-left: 2.0rem;
+	overflow: hidden;
+	border-radius: 0.3rem;
+}
+.tou div textarea{
+	width: 3.0rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	float: left;
+	outline: none;
+	text-align: center;
+	font-size: 0.83rem;
+	color: #969696;
+}
+.tou div i{
+	height: 2.0rem;
+	width: 0.1rem;
+	background: #CCCCCC;
+	float: left;
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+}
+.tou div a{
+	height: 2.5rem;
+	width: 1.25rem;
+	float: left;
+	display: inline-block;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
+.tou a img{
+	height: 1.33rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+.tou div input{
+	width: 50%;
+	float: left;
+	outline: none;
+	font-size: 0.83rem;
+	margin-top: 0.8rem;
+}
+.tou span{
+	float: right;
+	font-size: 1.17rem;
+	color: white;
+	margin-right: 1.58rem;
+}
+
+.dianpu{
+	width: 100%;
+}
+.dianpu ul{
+	width: 100%;
+}
+.dianpu ul li{
+	width: 100%;
+	height: 5.75rem;
+	background: white;
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+.dianpu li div{
+	width: 3.75rem;
+	height: 4.38rem;
+	background: url(../img/dianpu.png);
+	background-size: 250% 185%;
+	float: left;
+}
+.dianpu li p{
+	float: left;
+	line-height: 2.5rem;
+	margin-left: 0.83rem;
+}
+.dianpu li p span{
+	display: block;
+	font-size: 1.17rem;
+}
+.dianpu li p a{
+	width: 4.58rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	display: block;
+	font-size: 0.83rem;
+	color: #fe624e;
+	border: 0.1rem solid #fe624e;
+	border-radius: 0.4rem;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

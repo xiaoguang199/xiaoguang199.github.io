@@ -1,0 +1,268 @@
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+
+/** 设置默认字体 **/
+body,
+button, input, select, textarea /* for ie */ {
+    font: 14px/1em tahoma, "microsoft yahei", sans-serif;
+}
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal;}
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读, 让 small 正常化 */
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:hover,a:focus,a:active{outline: none; }
+
+sup { vertical-align: text-top; } /* 重置, 减少对行高的影响 */
+sub { vertical-align: text-bottom; }
+
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 100%; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 重置 HTML5 元素 */
+article, aside, details, figcaption, figure, footer,header, hgroup, menu, nav, section,
+summary, time, mark, audio, video {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: "Microsoft YaHei";
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.clearfix { zoom:1; }
+.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+mark { background: #ff0; }
+input,button{ margin:0; padding:0; list-style:none;border: none;}
+mark { background: #ff0; }
+
+/* 主要内容 */
+
+/* 左半部分 */
+
+/* 个人中心 */
+
+.main{
+    padding: 28px 0 0 0;
+    overflow: hidden;
+}
+.main-l,.main-r{
+    float: left;
+}
+.ucenter{
+    height:290px;
+    width:170px;
+}
+.ucenter h2{
+    height:49px;
+    width:170px;
+    background: #F84C84;
+    font-size: 18px;
+    color: #fff;
+    line-height: 49px;
+    text-align: center;
+}
+.ucenter h2 span{
+    font-size: 12px;
+}
+.ucenter ul{
+    background: #f5f5f5;
+}
+.ucenter ul li{
+    padding: 0 0 0 34px;
+    height:40px;
+    border-bottom: 1px solid #BDBDBD;
+    line-height: 40px;
+}
+.ucenter ul li>a{
+    color: #787878;
+}
+
+
+
+/* 右半部份 */
+.main-r{
+    width:792px;
+    margin: 0 0 0 18px;
+}
+/* 仓库中的宝贝 */
+.order{
+    height:49px;
+    background: #F84C84;
+}
+.order h2{
+    height: 49px;
+    color:#fff;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    line-height: 47px;
+}
+.order h2 span{
+    font-size: 12px;
+}
+
+
+/*我的评论 */
+
+.score{
+    width:760px;
+    border: 1px solid #BABABA;
+    border-top:none;
+    margin: 0 0 52px 0;
+    padding: 15px 15px 45px 15px;
+}
+
+/*动态评分*/
+.dynamic{
+	overflow: hidden;
+}
+.dynamic p{
+	float: left;
+}
+.dynamic span:last-child{
+	float: right;
+	color: #757171;
+	font-size: 16px;
+}
+.dynamic p span{
+	color: #353535;
+	margin: 0 5px 0 0;
+}
+.dynamic p span:first-child{
+	color: #A7A5A6;
+}
+.score table{
+	border-top: 1px solid #BCBCBC;
+	border-left: 1px solid #BCBCBC;
+	margin: 13px 0 0 0;
+}
+.score table th,.score table td{
+	width:126px;
+	height:38px;
+	border-right: 1px solid #BCBCBC;
+	border-bottom: 1px solid #BCBCBC;
+}
+.score table th{
+	background: #F8F8F8;
+	font-size: 16px;
+	color: #353535;
+	font-weight: normal;
+}
+.score table td{
+	text-align: center;
+	color: #6C6C6C;
+	font-size: 18px;
+}
+.score table tr td:last-child{
+	color: #F84C86;
+}
+
+/*评价*/
+.appraise{
+	margin: 24px 0 0 0;
+}
+.appraise button{
+	width:124px;
+	height: 31px;
+	border: 1px solid #F84C84;
+	border-radius: 2px;
+	background: #F84C84;
+	color: #fff;
+	font-size: 18px;
+}
+
+.appr{
+	border-top:1px solid #F84C84;
+}
+.appr p:first-child{
+	height:34px;
+	width:100%;
+	background: #F8F8F8;
+	color: #8A8A8A;
+	font-size: 16px;
+	line-height: 34px;
+	margin: 6px 0 0 0;
+}
+
+.appr ul{
+	overflow: hidden;
+	border-bottom: 1px solid #EDEDED;
+}
+.appr ul li{
+	float: left;
+	border-right: 1px solid #EDEDED;
+}
+.appr ul li img,.appr ul li p{
+	float: left;
+}
+.appr ul li:first-child{
+	width:274px;
+	height:56px;
+	text-align: center;
+	padding: 16px 0 14px 18px;
+}
+
+.appr ul li:first-child p{
+	margin: 0 0 0 20px;
+}
+.appr ul li:first-child p a{
+	color: #252525;
+	font-size: 16px;
+	line-height: 32px;
+}
+
+.appr ul li:first-child p a.c50{
+	color: #505050;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.appr ul li:nth-child(2){
+	width:317px;
+	line-height: 86px;
+	color: #616161;
+	font-size: 16px;
+	padding: 0 0 0 15px;
+}
+.appr ul li:last-child{
+	color: #626262;
+	line-height: 86px;
+	width:133px;
+	border:none;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

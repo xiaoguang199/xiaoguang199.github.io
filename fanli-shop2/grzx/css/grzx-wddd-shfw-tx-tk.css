@@ -1,0 +1,281 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+/* 去除iPhone中默认的input样式  清除苹果浏览器的圆角表单*/
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,span{margin:0; padding:0; border:none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#555; background-color:#f9f9f9;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-family: Microsoft YaHei;}
+img{border: none;}
+.scope{min-width:320px; max-width:540px;}
+/* 当浏览器的可视区域小于980px */
+@media screen and (max-width:980px) {
+	#wrap {width: 90%; margin:0 auto;}
+	#content {width: 60%;padding:5%;}
+	#sidebar {width: 30%;}
+	#footer {padding: 8% 5%;margin-bottom: 10px;}
+}
+/* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+	#header {height: auto;}
+	#searchform {position: absolute;top: 5px;right: 0;}
+	#content {width: auto; float: none; margin: 20px 0;}
+	#sidebar {width: 100%; float: none; margin: 0;}
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: none;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* 设置图片视频等自适应调整 */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.video embed, .video object, .video iframe {
+	width: 100%;
+	height: auto;
+}
+html{font-size: 62.5%;}
+
+
+
+
+/*头部*/
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+
+
+
+
+/*评价*/
+.order ul{
+	padding: 0.8rem 1rem 1rem;
+	background: #FFFFFF;
+	overflow: hidden;
+	margin:  0 0 1rem 0;
+	margin-top: 3.33rem;
+}
+.order ul li{
+	overflow: hidden;
+}
+.order ul li:nth-child(1) h2{
+	float: left;
+	font-size: 1.4rem;
+	font-weight: normal;
+	padding: 0.5rem 0;
+}
+
+
+.order ul li:nth-child(2){
+	border-top: 1px solid #e1e1e1;
+	padding: 0.6rem 0.5rem;
+}
+.order ul li:nth-child(2) img{
+	float: left;
+	margin: 0 1rem 0 0;
+	width: 25%;
+}
+.order ul li:nth-child(2) p{
+	padding: 0.4rem 0 0 0 ;
+}
+.order ul li:nth-child(2) p.p-1{
+	font-size: 1.2rem;
+	color: #414141;
+}
+.order ul li:nth-child(2) p.p-2{
+	font-size: 0.8rem;
+	color: #9c9c9c;
+}
+.order ul li:nth-child(2) p:last-child{
+	font-size: 1.2rem;
+	color: #777;
+}
+
+/*服务类型*/
+.tos,.problem,.upload,.card2,.card1{
+	background: #fff;
+	margin-bottom: 1rem;
+}
+.tos h2,.problem h2,.upload h2{
+	font-size: 1.4rem;
+	font-weight: normal;
+	padding: 0.8rem 1.2rem 0;
+	color: #414141;
+}
+.tos span{
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+	padding: 1.5rem 0;
+}
+.tos span a{
+	border: 1px solid #979797;
+	border-radius: 5px;
+	font-size: 1.0rem;
+	padding: 0.2rem 1.5rem;
+	color: #989898;
+}
+.tos span.current a{
+	border: 1px solid #fe664e;
+	color: #fe664e;
+}
+
+/*问题类型*/
+
+.problem textarea{
+	resize: none;
+	border: 1px solid #ababab;
+	border-radius: 5px;
+	margin: 1rem 0 1.5rem 1.2rem;
+	width: 80%;
+	height: 5rem;
+	padding: 1rem;
+	color: #969696;
+}
+
+
+/*上传图片*/
+
+.upload img{
+	padding: 1rem 2rem;
+	width: 20%;
+}
+
+/*卡号*/
+
+.card2,.card1{
+	padding: 1rem 1.2rem;
+	margin: 0;
+}
+.card1{
+	margin-bottom: 1rem;
+}
+.card2 input,.card1 input{
+	font-size: 1.4rem;
+	color: #414141;
+}
+
+/*提交*/
+
+button{
+	background: #fe6a52;
+	color: #fff;
+	margin: 2rem 5%;
+	width: 90%;
+	padding: 1rem 0;
+	font-size: 1.4rem;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

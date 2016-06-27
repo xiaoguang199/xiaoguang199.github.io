@@ -1,0 +1,127 @@
+<!--版权归北京鑫兴宝网络科技有限公司所有-->	
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>我的店铺</title>
+		<link rel="stylesheet" type="text/css" href="../css/moren.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/zhongx.css"/>
+		<link rel="stylesheet" type="text/css" href="../../fonts-fenlei/iconfont.css"/>
+		<script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
+		<script type="text/javascript" src="../js/zhongx.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<a href="###" class="left">
+				<img src="../img/head-1.png" />
+			</a>
+			<span>我的店铺</span>
+			<a href="###" class="right">
+				<img src="../img/head-2.png" />
+			</a>
+		</header>
+		<div class="tankuang">
+			<ul class="tk">
+				<li>
+					<a class="dian" href="../../shouye/html/shouye.html">
+						<i class="iconfont icon-home"></i>
+						<span>主页</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../../grzx/html/xxzx.html">
+						<i class="iconfont icon-bf-message"></i>
+						<span>消息</span>
+					</a>
+				</li>
+				<li>
+					<a class="dian" href="../html/qiandao.html">
+						<i class="iconfont icon-qiandao"></i>
+						<span>签到</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!--logo-->
+		<div class="logo">
+			<div class="logo-1">
+				<img src="../img/logo.png" />
+				<p>嘿哈宝贝旗舰店</p>
+			</div>
+		</div>
+		<!--内容-->
+		<div class="guanl">
+			<ul>
+				<li>
+					<a href="fabu1.html">
+						<img src="../img/tubiao.png"/>
+						<p>发布商品</p>
+					</a>
+				</li>
+				<li>
+					<a href="dingd1.html">
+						<img  src="../img/tubiao2.png"/>
+						<p>订单管理</p>
+					</a>
+				</li>
+				<li>
+					<a href="youh1.html">
+						<img  src="../img/tubiao3.png"/>
+						<p>优惠券</p>
+					</a>
+				</li>
+				<li>
+					<a href="shangp.html">
+						<img  src="../img/tubiao4.png"/>
+						<p>商品管理</p>
+					</a>
+				</li>
+				
+				<li>
+					<a href="shouyi1.html">
+						<img  src="../img/tubiao5.png"/>
+						<p>商家管理</p>
+					</a>
+				</li>
+				<li>
+					<a href="leimu1.html">
+						<img  src="../img/tubiao6.png"/>
+						<p>类目管理</p>
+					</a>
+				</li>
+
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript">
+		/****************头部右侧点击选项****************/
+		var j=false;
+		$(".right").on("click",function(){
+			if(j!==true) {
+				$(this).css("background", "#f75b42");
+				$(".tankuang").css("display","block");
+				j=true;
+			}else{
+				$(this).css("background", "");
+				$(".tankuang").css("display","none");
+				j=false;
+			}
+				//console.log(j);
+
+		})
+		/***********点击除了class=dian的地方时让tankuang隐藏*************/
+		$(document).click(function(event){
+			var dj=event.target.className;
+			console.log(dj);
+			if(dj!="right" && dj!="img"){
+				if(dj!="dian"){
+					$(".right").css("background", "");
+					$(".tankuang").css("display","none");
+					j=false;
+				}
+			}
+		})
+	</script>
+</html>

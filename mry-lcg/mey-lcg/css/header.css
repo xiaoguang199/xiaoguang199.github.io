@@ -1,0 +1,167 @@
+a:hover,a:focus,a:active{outline: none; }
+
+
+
+.type{
+    width:100%;
+    margin:0 auto;
+}
+
+/*半透明背景*/
+.shadow{
+    height:80px;
+    width:100%;
+    background:rgba(227,238,233,0.7);
+}
+.inner{
+    width:980px;
+    margin:0 auto;
+} 
+/**logo**/
+.logo{
+    height:67px;
+    width:67px;
+    margin:7px 0 0 0;
+    float:left;
+}
+.logo h1 a{
+    display:block;
+    width:67px;
+    height:67px;
+    background: url(../images/logo.png);
+
+}
+    
+/*nav*/
+.nav{
+    float:left;
+    margin:0 0 0 110px;
+}
+.nav ul li{
+    float:left;
+    width:135px;
+    height:60px;
+    text-align:center;
+    padding:20px 0 0 0;
+}
+.nav ul li:hover{
+    background: #f74d84;
+    height:60px;
+    }
+.nav ul li:hover a{
+    color:#fff;
+}
+.nav ul li>a{
+    display:block;
+    width:135px;
+    color:#f74d84;
+    text-decoration:none;
+    font: 16px/1.5 tahoma, \5b8b\4f53, sans-serif;
+}
+/*登陆*/
+.login{
+    float:right;
+    margin:0 20px 0 0;
+}
+.login li{
+    float:left;
+    margin:0 0 0 30px;
+    }
+.login li a{
+    color:#530b02;
+    font-size:14px;
+    line-height:80px;
+    text-decoration:none;
+    font-family: "宋体";
+}
+
+/*背景图*/
+.dpxqban{
+    height:133px;
+    background:url(../images/dpxq-banner.jpg);
+}
+
+.dpxqban .yiky img{
+	margin: 40px auto 20px;
+	height: auto;
+}
+
+.dpxqban span{
+	color: #5f1900;
+	margin: 0 0 0 190px;
+}
+.dpxqban img{
+	height: 15px;
+	margin:  0 0 0 13px;
+}
+.search{
+	float: right;
+	width: 446px;
+	margin: -43px 285px 0 0 ;
+	position: relative;
+}
+.search input{
+	width: 434px;
+	height: 45px;
+	border: 1px solid #FF88AE;
+	border-radius: 7px;
+	color: #f3b2c7;
+	font-size: 16px;
+	padding: 0 0 0 10px;
+}
+.search button{
+	padding:20px 10px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 65px;
+	height: 46px;
+	background: #F84C84;
+	border: 1px solid #F84C84;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	color: #FFF;
+	font-size: 16px;
+	line-height: 10px;
+}
+
+.gwc{
+	width: 44px;
+	height: 44px;
+	background: url(../images/gwc.png) no-repeat 5px 8px #F64D84;
+	border: 1px solid #F64D84;
+	border-radius: 7px;
+	margin: -61px 217px 0 0 ;
+	float: right;
+}
+
+.gwc span{
+	background: #524E4F;
+	width: 12px;
+	height: 12px;
+	border: 1px solid #524E4F;
+	border-radius: 100%;
+	float: right;
+	margin: 4px 1px 0 0;
+	color: #fff;
+	text-align: center;
+	line-height: 12px;
+	font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

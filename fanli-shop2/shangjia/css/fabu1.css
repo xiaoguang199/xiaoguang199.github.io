@@ -1,0 +1,305 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+  /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	margin-top: 3.33rem;
+}
+.tup{
+	width: 100%;
+	height: 13.11rem;
+	background: url(../img/fabu-bg.png) no-repeat left center;
+	background-size: 116% 214%;
+	/*background-position: 0.0rem -6.0rem;*/
+	position: relative;
+}
+.tup img{
+	width: 2.5rem;
+	height: 2.5rem;
+	position: absolute;
+	bottom: 0.58rem;
+	left: 0.83rem;
+}
+
+.biaot{
+	width: 100%;
+	height: 9.97rem;
+	background: white;
+	margin-bottom: 0.42rem;
+}
+.biaot p{
+	width: 95%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	margin-left: 5%;
+	border-bottom: 0.15rem solid #f9f9f9;
+}
+.biaot p input{
+	width: 70%;
+	height: 1.5rem;
+	font-size: 1.0rem;
+	outline: none;
+}
+.biaot div{
+	width: 90%;
+	height: 3.23rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+	line-height: 3.23rem;
+	overflow: hidden;
+}
+.biaot div a{
+	height: 3.23rem;
+	display: block;
+	color: #555;
+}
+.biaot div span{
+	/*display: block;*/
+	float: left;
+}
+.biaot div img{
+	width: 0.63rem;
+	height: 1.25rem;
+	margin-top: 1.25rem;
+	display: block;
+	float: right;
+}
+
+.huoh{
+	width: 100%;
+	height: 6.67rem;
+	background: white;
+	margin-bottom: 0.42rem;
+}
+.huoh a{
+	margin-left: 1.75rem;
+}
+.huoh p{
+	width: 95%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	font-size: 1.0rem;
+	margin-left: 5%;
+	border-bottom: 0.15rem solid #ccc;
+}
+.huoh p img{
+	width: 0.63rem;
+	height: 1.25rem;
+	margin-top: 1.25rem;
+	display: block;
+	float: right;
+	margin-right: 5%;
+}
+.huoh div{
+	width: 90%;
+	height: 3.23rem;
+	margin: 0 auto;
+	font-size: 1.0rem;
+	line-height: 3.23rem;
+	overflow: hidden;
+}
+.huoh div img{
+	width: 0.63rem;
+	height: 1.25rem;
+	margin-top: 1.25rem;
+	display: block;
+	float: right;
+}
+
+.pifa{
+	width: 100%;
+}
+.pifa div{
+	width: 95%;
+	height: 3.33rem;
+	margin-left: 5%;
+	line-height: 3.33rem;
+	border-bottom: 0.15rem solid #ccc;
+	font-size: 1.0rem;
+}
+.pifa div a{
+	float: right;
+	font-size: 1.5rem;
+	margin-right: 5%;
+}
+.pifa div input{
+	width: 50%;
+	height: 1.5rem;
+	font-size: 1.0rem;
+	outline: none;
+	background: none;
+	margin-left: 1.75rem;
+}
+
+.jiage{
+	width: 100%;
+	background: white;
+	margin-bottom: 0.63rem;
+}
+.jiage div{
+	width: 95%;
+	height: 3.33rem;
+	margin-left: 5%;
+	line-height: 3.33rem;
+	border-bottom: 0.15rem solid #ccc;
+	font-size: 1.0rem;
+}
+.jiage div a{
+	float: right;
+	font-size: 1.5rem;
+	margin-right: 5%;
+}
+.jiage div input{
+	width: 50%;
+	height: 1.5rem;
+	font-size: 1.0rem;
+	outline: none;
+	background: none;
+	margin-left: 1.75rem;
+}
+
+.miaoshu{
+	width: 100%;
+	background: white;
+	height: 6.88rem;
+	margin-bottom: 0.92rem;
+}
+.miaoshu div{
+	width: 95%;
+	height: 3.33rem;
+	margin-left: 5%;
+	line-height: 3.33rem;
+	font-size: 1.0rem;
+}
+.miaoshu div a{
+	display: block;
+	color: #555;
+}
+.miaoshu div img{
+	width: 0.63rem;
+	height: 1.25rem;
+	margin-top: 1.25rem;
+	margin-right: 5%;
+	display: block;
+	float: right;
+}
+
+footer{
+	width: 100%;
+	height: 4.17rem;
+	background: white;
+}
+footer p{
+	width: 50%;
+	height: 4.17rem;
+	line-height: 4.17rem;
+	font-size: 1.17rem;
+	text-align: center;
+	float: left;
+}
+footer div{
+	width: 50%;
+	height: 4.17rem;
+	line-height: 4.17rem;
+	font-size: 1.17rem;
+	color: white;
+	text-align: center;
+	float: right;
+	background: #fe6d53;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

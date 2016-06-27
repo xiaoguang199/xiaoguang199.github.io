@@ -1,0 +1,168 @@
+
+html{
+	font-size: 24px;
+}
+body{
+	background: #F9F9F9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+/*内容*/
+.mian{
+	width: 100%;
+	/*height: 16.67rem;*/
+}
+.mian .fas{
+	width: 100%;
+	font-size: 0.92rem;
+	line-height: 2.71rem;
+}
+.fas span{
+	margin-left: 0.83rem;
+	color: #aaaaaa;
+}
+.mian .yzm{
+	width: 100%;
+	height: 3.08rem;
+	line-height: 3.08rem;
+	overflow: hidden;
+	margin-bottom: 0.83rem;
+}
+.yzm .txt{
+	float: left;
+	width: 70%;
+	height: 3.08rem;
+	background: white;
+}
+.txt span{
+	font-size: 1.0rem;
+	margin-left: 0.83rem;
+}
+.txt input{
+	font-size: 0.83rem;
+	margin-left: 0.83rem;
+	width: 12.4rem;
+	height: 2.0rem;
+	outline: none;
+}
+.yzm .btn{
+	float: right;
+	width: 29%;
+	height: 3.08rem;
+}
+.btn input{
+	width: 9.2rem;
+	height: 3.08rem;
+	background: white;
+	font-size: 1.0rem;
+	color: #ffbcb5;
+	text-decoration: none;
+	outline: none;
+}
+.mian .mima{
+	width: 100%;
+	height: 6.25rem;
+	margin-bottom: 1.25rem;
+}
+.mima div{
+	width: 100%;
+	height: 3.09rem;
+	background: white;
+	line-height: 3.09rem;
+}
+.mima div span{
+	margin-left: 0.83rem;
+	font-size: 1.0rem;
+}
+.mima div input{
+	width: 70%;
+	height: 2.0rem;
+	font-size: 1.0rem;
+	margin-left: 0.83rem;
+	outline: none;
+}
+.mima .shez{
+	margin-bottom: 0.14rem;
+}
+.mian button{
+	width: 90%;
+	height: 3.13rem;
+	font-size: 1.17rem;
+	color: white;
+	background: #fe6a52;
+	outline: none;
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.13rem;
+}
+
+
+
+
+
+
+
+
+

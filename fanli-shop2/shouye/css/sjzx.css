@@ -1,0 +1,273 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 5;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+.lunbo{
+	width: 100%;
+	height: 10.17rem;
+	margin-top: 3.25rem;
+}
+.imgs{
+	width: 100%;
+	position: relative;
+}
+.imgs img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+section{
+	width: 100%;
+	padding-top: 0.71rem;
+}
+.youhui{
+	width: 100%;
+	background: white;
+}
+.top{
+	width: 100%;
+	height: 2.91rem;
+	line-height: 2.91rem;
+	overflow: hidden;
+	background: white;
+	border-bottom: 0.1rem solid #f9f9f9;
+}
+.left_1{
+	float: left;
+	height: 2.91rem;
+}
+.left_1 a{
+	font-size: 1.17rem;
+	color: #fd573c;
+	margin-left: 0.63rem;
+}
+.left_1 img{
+	height: 1.33rem;
+	vertical-align: middle;
+	margin-left: 0.83rem;
+	margin-bottom: 0.5rem;
+}
+.youhui_pic{
+	width: 25.21rem;
+	margin: 0 auto;
+	
+	padding-bottom: 1.0rem;
+}
+.youhui_pic ul{
+	width: 100%;
+	overflow: hidden;
+}
+.youhui_pic ul li{
+	width: 8.0rem;
+	float: left;
+	margin-right: 0.6rem;
+}
+.youhui_pic ul li:last-child{
+	margin-right: 0;
+}
+.youhui_pic span{
+	display: block;
+	width: 8.25rem;
+	height: 7.5rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	padding-top: 0.83rem;
+}
+.youhui_pic span img{
+	width: 100%;
+}
+.youhui_pic p{
+	font-size: 1.0rem;
+	padding-left: 0.5rem;
+	margin-bottom: 0.3rem;
+	margin-top: 0.2rem;
+}
+.youhui_pic i{
+	font-size: 0.92rem;
+	color: red;
+	padding-left: 0.4rem;
+}
+.youhui_pic del{
+	font-size: 0.83rem;
+	margin-left: 1.25rem;
+}
+
+.youhui_max{
+	width: 100%;
+	height: 3.0rem;
+	line-height: 3.0rem;
+	text-align: center;
+	font-size: 1.08rem;
+}
+.youhui_max a{
+	margin: 0 0.75rem;
+}
+.youhui_max span{
+	display: inline-block;
+	width: 5.42rem;
+	height: 0.1rem;
+	background: #d9d9d9;
+	margin-bottom: 0.3rem;
+}
+
+.content1{
+	width: 25.62rem;
+	margin: 0 auto;
+}
+
+.tj-fen{
+	width: 100%;
+	overflow: hidden;
+}
+.tj-fen li{
+	width: 12.46rem;
+	height: 14.17rem;
+	background: white;
+	float: left;
+	margin-bottom: 0.58rem;
+	margin-right: 0.58rem;
+	border-radius: 0.5rem;
+	
+}
+/*.tj-fen li:nth-child(2n-1){
+	margin-left: 0.25rem;
+}*/
+.tj-fen li:nth-child(2n){
+	margin-right: 0;
+}
+.tj-fen li .li-1{
+	width: 100%;
+	height: 8.33rem;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+.li-1 img{
+	width: 100%;
+	margin-top: -2.5rem;
+}
+.tj-fen li .li-2{
+	width: 94%;
+	height: 3.33rem;
+	line-height: 1.6rem;
+	margin: 0 auto;
+	border-bottom: 0.1rem solid #e4e4e4;
+}
+.li-2 p{
+	font-size: 1.08rem;
+}
+.li-2 a{
+	font-size: 0.92rem;
+}
+.tj-fen li .li-3{
+	width: 100%;
+	height: 2.38rem;
+	line-height: 2.38rem;
+	overflow: hidden;
+}
+.li-3 p{
+	float: left;
+	font-size: 1.38rem;
+	overflow: hidden;
+}
+.li-3 span{
+	float: left;
+	color: #fb8476;
+}
+.li-3 del{
+	font-size: 0.83rem;
+	float: left;
+	margin-top: 0.23rem;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

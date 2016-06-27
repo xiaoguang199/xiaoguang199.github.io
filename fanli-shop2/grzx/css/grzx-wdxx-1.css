@@ -1,0 +1,321 @@
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+}
+/* 去除iPhone中默认的input样式  清除苹果浏览器的圆角表单*/
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section,span{margin:0; padding:0; border:none;}
+body{font-family: Microsoft YaHei,Tahoma,Arial,sans-serif; color:#555; background-color:#f9f9f9;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+.clearfix{zoom:1;}
+a{text-decoration:none; color:#969696; font-family: Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-family: Microsoft YaHei;}
+img{border: none;}
+.scope{min-width:320px; max-width:540px;}
+/* 当浏览器的可视区域小于980px */
+@media screen and (max-width:980px) {
+	#wrap {width: 90%; margin:0 auto;}
+	#content {width: 60%;padding:5%;}
+	#sidebar {width: 30%;}
+	#footer {padding: 8% 5%;margin-bottom: 10px;}
+}
+/* 当浏览器的可视区域小于650px */
+@media screen and (max-width: 650px) {
+	#header {height: auto;}
+	#searchform {position: absolute;top: 5px;right: 0;}
+	#content {width: auto; float: none; margin: 20px 0;}
+	#sidebar {width: 100%; float: none; margin: 0;}
+}
+
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+	-webkit-text-size-adjust: none;
+}
+/* 设置HTML5元素为块 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* 设置图片视频等自适应调整 */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+.video embed, .video object, .video iframe {
+	width: 100%;
+	height: auto;
+}
+html{font-size: 62.5%;}
+button{outline: none;}
+
+
+
+
+
+body{
+	position: relative;
+}
+
+/*头部*/
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+
+/*导航*/
+.tu{
+	width: 100%;
+	height: 12.5rem;
+	background: url(../img/bg3.png);
+	background-size: 100% 100%;
+	margin-top: 3.33rem;
+}
+.tu img{
+	width: 5.63rem;
+	height: 5.63rem;
+	display: block;
+	margin: 0 auto;
+	padding-top: 1.67rem;
+
+}
+.tu p{
+	text-align: center;
+	margin-top: 0.5rem;
+	font-size: 1.5rem;
+	color: #fe6a5b;
+}
+
+
+
+.nav ul{
+	overflow: hidden;
+	background: #fff;
+}
+.nav ul li a{
+	float: left;
+	width: 33%;
+	text-align: center;
+	font-size: 1.4rem;
+	border-right: 1px solid #e5e5e5;
+	color: #3b3b3b;
+	padding: 0.5rem 0;
+}
+.nav ul li:last-child a{
+	border: none;
+}
+.nav ul li a p:first-child{
+	color: #fe5d4b;
+}
+
+
+/*下线*/
+.rank ul li{
+	background: #fff;
+	font-size: 1.2rem;
+	border-bottom: 1px solid #e3e3e3;
+	padding: 0.7rem 1rem;
+}
+.rank ul li:first-child{
+	margin: 1rem 0;
+	border: none;
+	background: #fff url(../img/arrow.png) no-repeat 33rem center;
+	background-size: 3%;
+}
+.rank ul li:first-child img{
+	float: right;
+	margin-right: 3.5rem;
+	margin-top: -0.2rem;
+}
+.rank ul li a{
+	color: #424242;
+}
+.rank ul li:nth-child(2) span:last-child{
+	float: right;
+	margin-right: 1.5rem;
+}
+.rank ul li:last-child{
+	background: #fff url(../img/ico7.png) no-repeat 32rem center ;
+	background-size: 5%;
+}
+
+/*nav-b*/
+.nav_b ul{
+	background: none;
+
+}
+
+/*姓名*/
+table{
+	width:100%;
+	text-align:center;
+	border-collapse:collapse;
+	border-spacing:1;
+	border-spacing:0; 
+	border-top: 1px solid #e5e5e5;
+	border-bottom: 1px solid #e5e5e5;
+
+}
+table td{
+	word-break: break-all; 
+	word-wrap:break-word;
+	border-right:1px solid #e5e5e5; 
+	border-bottom:1px solid #e5e5e5;
+	color: #6d6d6d;
+	font-size: 1.2rem;
+	padding: 0.2rem 0;
+}
+table tr th{
+	width: 25%;
+	border-bottom: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	color: #303030;
+	font-size: 1.2rem;
+	font-weight: normal;
+	padding: 0.3rem 0;
+}
+table .born{
+	border-right: none;
+}
+table th span{
+	font-size: 1.0rem;
+	color: #716f6f;
+}
+
+
+/*加载更多*/
+.more{
+	text-align: center;
+}
+.more a{
+	color: #c9c9c9;
+	font-size: 2.8rem;
+	vertical-align: middle;
+}
+.more a:last-child{
+	font-size: 1.4rem;
+}
+
+
+/*我的下线C*/
+.rank_b ul li{
+	background: #fff url(../img/arrow.png) no-repeat 33rem center ;
+	background-size: 3%;
+	font-size: 1.2rem;
+	border-top: 1px solid #e3e3e3;
+	padding: 0.7rem 1rem;
+}
+.rank_b ul li span:last-child{
+	float: right;
+	margin-right: 3rem;
+}
+.rank_b ul li a{
+	color: #424242;
+}
+.rank_b ul li a span:last-child{
+	color: #acacac;
+}
+/*提现*/
+.cash{
+	text-align: center;
+	padding: 1rem 0 2rem;
+}
+.cash button{
+	background: #fe6a52;
+	width: 90%;
+	color: #fff;
+	font-size: 1.4rem;
+	border-radius: 5px;
+	padding: 0.5rem 0;
+}
+
+
+

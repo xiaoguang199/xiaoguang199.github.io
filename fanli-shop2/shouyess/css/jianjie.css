@@ -1,0 +1,172 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	
+}
+.dianpu{
+	width: 100%;
+	height: 5.75rem;
+	margin-top: 3.33rem;
+	margin-bottom: 0.5rem;
+	background: white;
+}
+.dianpu div{
+	width: 3.75rem;
+	height: 4.38rem;
+	background: url(../img/dianpu.png);
+	background-size: 250% 185%;
+	float: left;
+}
+.dianpu p{
+	float: left;
+	line-height: 2.5rem;
+	margin-left: 0.83rem;
+}
+.dianpu p span{
+	display: block;
+	font-size: 1.17rem;
+}
+.dianpu p a{
+	width: 4.58rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	display: block;
+	font-size: 0.83rem;
+	color: #fe624e;
+	border: 0.1rem solid #fe624e;
+	border-radius: 0.4rem;
+	text-align: center;
+}
+.haoping{
+	width: 100%;
+	background: white;
+	margin-bottom: 0.5rem;
+}
+
+.haoping p{
+	width: 95%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	margin-left: 5%;
+	border-bottom: 0.1rem solid #e3e3e3;
+	font-size: 1.0rem;
+}
+.haoping p:last-child{
+	border: 0;
+}
+.haoping p:last-child span{
+	margin-left: 2.17rem;
+}
+.haoping p span{
+	margin-left: 3.33rem;
+}
+
+.dianjia{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	background: white;
+	font-size: 1.0rem;
+}
+.dianjia a{
+	margin-left: 5%;
+}
+.dianjia span{
+	margin-left: 4.17rem;
+}
+.dianjia img{
+	float: right;
+	width: 1.58rem;
+	margin-right: 1.0rem;
+	margin-top: 1.0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,183 @@
+html{
+	font-size: 24px;
+}
+body{
+	background: #f9f9f9;
+}
+   /*头部 */
+header{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: url(../img/bg.jpg);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+header span{
+	font-size: 1.5rem;
+	color: white;
+}
+header a img{
+	display: inline-block;
+	height: 1.65rem;
+	vertical-align: middle;
+}
+.left{
+	height: 1.65rem;
+	float: left;
+	margin-left: 1.0rem;
+}
+.right{
+	display: block;
+	width: 3.0rem;
+	height: 3.33rem;
+	float: right;
+	text-align: center;
+	/*margin-right: 1.0rem;*/
+}
+.tankuang{
+	width: 4.79rem;
+	height: 6.67rem;
+	position: fixed;
+	top: 3.25rem;
+	right: 0rem;
+	z-index: 5;
+	background: #f75b42;
+	display: none;
+}
+.tk{
+	width: 100%;
+}
+.tk li{
+	width: 100%;
+	height: 2.22rem;
+	line-height: 2.22rem;
+}
+.tk li a{
+	display: block;
+	width: 100%;
+	height: 2.22rem;
+	color: #ffffff;
+}
+.tk li i{
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+	font-size: 1.2rem;
+}
+.tk li span{
+	font-size: 0.92rem;
+}
+
+section{
+	width: 100%;
+	margin-top: 3.33rem;
+}
+
+.fenl{
+	width: 100%;
+	height: 3.13rem;
+	margin-bottom: 0.5rem;
+	overflow: hidden;
+}
+.fenl li{
+	width: 49.7%;
+	height: 3.13rem;
+	line-height: 3.13rem;
+	text-align: center;
+	float: left;
+	background: white;
+	font-size: 1.17rem;
+}
+.fenl li:nth-child(1){
+	color: red;
+}
+.fenl li:nth-child(2){
+	margin-left: 0.6%;
+}
+.shangp{
+	width: 100%;
+	height: 6.46rem;
+	background: white;
+	overflow: hidden;
+	margin-bottom: 0.5rem;
+}
+.shangp i{
+	float: left;
+	width: 4.79rem;
+	height: 5.21rem;
+	margin-left: 1.0rem;
+}
+.shangp i img{
+	width: 4.79rem;
+	height: 5.21rem;
+	margin-top: 0.5rem;
+}
+.shangp div{
+	float: left;
+	margin-top: 0.5rem;
+	margin-left: 0.5rem;
+}
+.shangp p{
+	width: 100%;
+	font-size: 1.08rem;
+}
+.shangp span{
+	display: block;
+	width: 100%;
+	font-size: 1.25rem;
+	margin-top: 0.63rem;
+}
+.shangp a{
+	display: block;
+	width: 100%;
+	font-size: 0.83rem;
+	margin-top: 0.63rem;
+}
+.shangp b{
+	float: right;
+	width: 1.79rem;
+	height: 1.79rem;
+	margin-right: 1.0rem;
+}
+.shangp b img{
+	width: 1.79rem;
+	height: 1.79rem;
+	margin-top: 2.33rem;
+}
+
+footer{
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+footer div{
+	width: 100%;
+	height: 3.33rem;
+	line-height: 3.33rem;
+	text-align: center;
+	background: #fe634c;
+	font-size: 1.17rem;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
